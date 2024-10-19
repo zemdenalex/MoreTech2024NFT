@@ -206,6 +206,10 @@ def get_right_address_NFT_by_token_ids(user_address, token_ids):
         logger.error(f"Error while getting NFTs by token IDs: {str(e)}")
     return valid_nfts
 
+@app.route('/')
+def home():
+    return "Welcome to the backend server!"
+
 # Example usage
 if __name__ == "__main__":
     app.run(port=5000, debug=True)
