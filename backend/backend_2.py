@@ -5,6 +5,8 @@ import logging
 import sqlite3
 import bcrypt
 from http.server import BaseHTTPRequestHandler, HTTPServer
+from flask import Flask, app, request, jsonify, send_from_directory
+
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -229,18 +231,55 @@ def login_user(username_or_email, password):
     return False
 
 # Image saving
-def save_image(image_url):
+def save_file_and_get_url(file_path):
     try:
+        # Сохраняем файл изображения в базу данных и возвращаем ссылку
         conn = sqlite3.connect('images.db')
         c = conn.cursor()
-        # Вставляем ссылку на изображение в таблицу
-        c.execute('INSERT INTO images (image_url) VALUES (?)', (image_url,))
+        c.execute('INSERT INTO images (image_url) VALUES (?)', (file_path,))
         conn.commit()
-        logger.info("Image saved successfully")
+        logger.info("File saved successfully")
+        return f"/file/{file_path.split('/')[-1]}"
     except sqlite3.Error as e:
-        logger.error(f"Failed to save image: {str(e)}")
+        logger.error(f"Failed to save file: {str(e)}")
     finally:
         conn.close()
+    return None
+
+# Flask routes for handling files
+@app.route('/upload', methods=['POST'])
+def upload_file_data_base():
+    if 'file' not in request.files:
+        return jsonify({"error": "No file part"}), 400
+    file = request.files['file']
+    if file.filename == '':
+        return jsonify({"error": "No selected file"}), 400
+    if file:
+        file_path = f"{app.config['UPLOAD_FOLDER']}/{file.filename}"
+        file.save(file_path)
+        return jsonify({"message": "File uploaded successfully", "file_url": file_path})
+
+@app.route('/file/<filename>', methods=['GET'])
+def get_file_data_base(filename):
+    return send_from_directory(app.config['UPLOAD_FOLDER'], filename)
+
+# Function to prepare NFT list to send to frontend
+def prepare_nft_list_for_frontend(nft_list):
+    updated_nft_list = []
+    for nft in nft_list:
+        # Извлекаем фактический файл вместо ссылки
+        image_file_path = nft.get("image")
+        if image_file_path:
+            image_file_data = get_file_data_base(image_file_path.split('/')[-1])
+            updated_nft = {
+                "image": image_file_data,  # Добавляем файл изображения
+                "text": nft.get("text"),
+                "tags": nft.get("tags"),
+                "reason": nft.get("reason"),
+                "isApproveNFT": nft.get("isApproveNFT")
+            }
+            updated_nft_list.append(updated_nft)
+    return updated_nft_list
 
 # Example usage
 if __name__ == "__main__":
