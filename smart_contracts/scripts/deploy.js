@@ -6,9 +6,9 @@ async function main() {
     const EmployeeNFT = await ethers.getContractFactory("EmployeeNFT");
     const employeeNFT = await EmployeeNFT.deploy(/* аргументы конструктора, если есть */);
   
-    await employeeNFT.waitForDeployment();
+    await employeeNFT.deployed();
   
-    const contractAddress = await employeeNFT.getAddress();
+    const contractAddress = await employeeNFT.address;
     console.log("EmployeeNFT deployed to:", contractAddress);
   }
   

@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0;
+pragma solidity ^0.8.1;
 
-import "node_modules/@openzeppelin/contracts/token/ERC721/ERC721.sol";
-import "node_modules/@openzeppelin/contracts/access/Ownable.sol";
+import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
+import "@openzeppelin/contracts/access/Ownable.sol";
 
 /**
  * @title EmployeeNFT
@@ -52,7 +52,7 @@ contract EmployeeNFT is ERC721, Ownable {
         bool _isApproveNFT,
         string memory _reason,
         uint256 _previousTokenId,
-        string _dataHashFromBackend
+        string memory dataHashFromBackend
     ) public pure returns (bytes32) {
         // Комбинируем все данные в единый хэш
         return keccak256(abi.encode(
@@ -64,7 +64,7 @@ contract EmployeeNFT is ERC721, Ownable {
             _isApproveNFT,
             _reason,
             _previousTokenId,
-            _dataHashFromBackend
+            dataHashFromBackend
         ));
     }
 
@@ -81,7 +81,7 @@ contract EmployeeNFT is ERC721, Ownable {
         bool _isApproveNFT,
         string memory _reason,
         uint256 _previousTokenId,
-        string dataHashFromBackend
+        string memory dataHashFromBackend
     ) public onlyOwner {
         // Генерация хэша из предоставленных данных
         bytes32 dataHash = generateDataHash(
@@ -93,7 +93,7 @@ contract EmployeeNFT is ERC721, Ownable {
             _isApproveNFT,
             _reason,
             _previousTokenId,
-            _dataHashFromBackend
+            dataHashFromBackend
         );
 
         // Кэшируем значение tokenCounter для уменьшения обращений к хранилищу
@@ -109,7 +109,7 @@ contract EmployeeNFT is ERC721, Ownable {
             isApproveNFT: _isApproveNFT,
             reason: _reason,
             previousTokenId: _previousTokenId,
-            dataHashFromBackend: _dataHashFromBackend,
+            dataHashFromBackend: dataHashFromBackend,
             dataHash: dataHash
         });
 
