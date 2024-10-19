@@ -86,7 +86,7 @@ def send_format_data_for_make_certificate(data, time_stamp, user_eth_address, pr
             data['isApproveNFT'],
             data['reason'],
             data['previousTokenId'],
-            data['dataHashFromBackend']
+            data['hash_from_backend']
         ).build_transaction({
             'from': user_eth_address,
             'nonce': web3.eth.get_transaction_count(user_eth_address),
@@ -166,7 +166,7 @@ def get_right_address_NFT(user_address):
                         "isApproveNFT": employee_data[5],
                         "reason": employee_data[6],
                         "previousTokenId": employee_data[7],
-                        "dataHashFromBackend": employee_data[8]
+                        "hash_from_backend": employee_data[8]
                     }
                     valid_nfts.append(employee_data_dict)
 
@@ -198,7 +198,7 @@ def get_right_address_NFT_by_token_ids(user_address, token_ids):
                         "isApproveNFT": employee_data[5],
                         "reason": employee_data[6],
                         "previousTokenId": employee_data[7],
-                        "dataHashFromBackend": employee_data[8]
+                        "hash_from_backend": employee_data[8]
                     }
                     valid_nfts.append(employee_data_dict)
 
