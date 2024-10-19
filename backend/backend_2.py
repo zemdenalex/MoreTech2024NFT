@@ -1,3 +1,4 @@
+import hashlib
 import requests
 import json
 import logging
@@ -44,6 +45,36 @@ def create_images_table():
 create_users_table()
 create_images_table()
 
+# Function to create a hash from NFT data
+def make_hash_from_backend(data):
+    hash_input = f"{data['recipientAddress']}{data['image']}{data['text']}{','.join(data['tags'])}{data['reason']}{data['previousTokenId']}{data['isApproveNFT']}"
+    hash_output = hashlib.sha256(hash_input.encode('utf-8')).hexdigest()
+    logger.info(f"Generated hash: {hash_output}")
+    return hash_output
+
+# Function to check if the given hash matches the generated hash
+def check_hash_with_hash_from_backend(nft_data):
+    # Только необходимые поля, которые использовались для создания хэша
+    data_for_hash = {
+        "recipientAddress": nft_data["recipientAddress"],
+        "image": nft_data["image"],
+        "text": nft_data["text"],
+        "tags": nft_data["tags"],
+        "reason": nft_data["reason"],
+        "previousTokenId": nft_data["previousTokenId"],
+        "isApproveNFT": nft_data["isApproveNFT"]
+    }
+
+    generated_hash = make_hash_from_backend(data_for_hash)
+    hash_from_backend = nft_data.get("hash_from_backend", "")
+
+    if generated_hash == hash_from_backend:
+        logger.info("Hash matches.")
+        return True
+    else:
+        logger.error("Hash mismatch.")
+        return False
+
 # Function to send data to backend_1
 def send_data_for_backend(frontend_data, is_update=False):
     data = {
@@ -56,12 +87,64 @@ def send_data_for_backend(frontend_data, is_update=False):
         "isApproveNFT": frontend_data['isApproveNFT']
     }
 
+    # Generate hash for data
+    data_hash = make_hash_from_backend(data)
+    data['hash_from_backend'] = data_hash
+
     try:
         response = requests.post(f"{BACKEND_1_URL}/send-data", json=data)
         response.raise_for_status()
         logger.info(f"Data sent successfully: {response.status_code}")
     except requests.exceptions.RequestException as e:
         logger.error(f"Failed to send data to backend_1: {str(e)}")
+
+# Function to get NFT chains from a list of valid NFTs
+def get_nft_chains(valid_nfts):
+    # Создаем список цепочек NFT
+    nft_chains = []
+    # Проходим по каждому NFT и распределяем их в цепочки
+    for nft in valid_nfts:
+        previous_id = nft.get("previousTokenId")
+        token_id = nft.get("tokenId")  # Получаем идентификатор токена
+
+        # Флаг, указывающий, добавлен ли NFT в существующую цепочку
+        added_to_existing_chain = False
+
+        # Проходим по существующим цепочкам, чтобы найти подходящую
+        for chain in nft_chains:
+            # Проверяем, если текущий NFT ссылается на последний в цепочке
+            if chain[-1].get("tokenId") == previous_id:
+                chain.append(nft)
+                added_to_existing_chain = True
+                break
+
+        # Если ни одна из существующих цепочек не подошла, создаем новую цепочку с текущим NFT
+        if not added_to_existing_chain:
+            nft_chains.append([nft])
+
+    # Логируем цепочки для отладки
+    logger.info(f"NFT chains: {nft_chains}")
+    return nft_chains
+
+# Function to get NFTs by token IDs from backend_1
+def get_nfts_by_token_ids(user_eth_address, token_ids):
+    try:
+        response = requests.post(f"{BACKEND_1_URL}/get-nfts-by-token-ids", json={"userAddress": user_eth_address, "tokenIds": token_ids})
+        response.raise_for_status()
+
+        # Получаем JSON ответ в виде словаря
+        data = response.json()
+
+        # Фильтруем NFT на основе проверки хэша
+        valid_nfts = [nft for nft in valid_nfts if check_hash_with_hash_from_backend(nft, nft.get("hash_from_backend", ""))]
+
+        # Используем get_nft_chains для организации NFT в цепочки
+        nft_chains = get_nft_chains(valid_nfts)
+        return nft_chains
+    
+    except requests.exceptions.RequestException as e:
+        logger.error(f"Failed to get NFTs by token IDs from backend_1: {str(e)}")
+        return []
 
 # Function to get valid NFTs from backend_1 and organize them into chains
 def get_valid_nfts(user_eth_address):
@@ -76,32 +159,13 @@ def get_valid_nfts(user_eth_address):
         valid_nfts = data.get("nfts", [])
         logger.info(f"Valid NFTs received: {valid_nfts}")
 
-        # Создаем список цепочек NFT
-        nft_chains = []
+        # Фильтруем NFT на основе проверки хэша
+        valid_nfts = [nft for nft in valid_nfts if check_hash_with_hash_from_backend(nft, nft.get("hash_from_backend", ""))]
 
-        # Проходим по каждому NFT и распределяем их в цепочки
-        for nft in valid_nfts:
-            previous_id = nft.get("previousTokenId")
-            token_id = nft.get("tokenId")  # Получаем идентификатор токена
-
-            # Флаг, указывающий, добавлен ли NFT в существующую цепочку
-            added_to_existing_chain = False
-
-            # Проходим по существующим цепочкам, чтобы найти подходящую
-            for chain in nft_chains:
-                # Проверяем, если текущий NFT ссылается на последний в цепочке
-                if chain[-1].get("tokenId") == previous_id:
-                    chain.append(nft)
-                    added_to_existing_chain = True
-                    break
-
-            # Если ни одна из существующих цепочек не подошла, создаем новую цепочку с текущим NFT
-            if not added_to_existing_chain:
-                nft_chains.append([nft])
-
-        # Логируем цепочки для отладки
-        logger.info(f"NFT chains: {nft_chains}")
+        # Используем get_nft_chains для организации NFT в цепочки
+        nft_chains = get_nft_chains(valid_nfts)
         return nft_chains
+    
     except requests.exceptions.RequestException as e:
         logger.error(f"Failed to get valid NFTs from backend_1: {str(e)}")
         return []
@@ -184,8 +248,8 @@ if __name__ == "__main__":
     frontend_data = {
         'recipientAddress': "0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab",
         'image': "ipfs://image_link",
-        'text': "Employee Information 11",
-        'tags': ["tag2", "tag3", "tag6"],
+        'text': "Employee Information 101",
+        'tags': ["tag2", "tag3", "tag6", "tag7"],
         'reason': "Update",
         'previousTokenId': 1,
         'isApproveNFT': True
@@ -194,7 +258,9 @@ if __name__ == "__main__":
     # Save image to database
     save_image(frontend_data['image'])
 
-    # Send data to backend_1
+    # i = 0
+    # for i in range(1, 100):
+    #     # Send data to backend_1
     send_data_for_backend(frontend_data, is_update=True)
 
     # Get valid NFTs from backend_1
