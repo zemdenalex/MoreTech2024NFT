@@ -7,6 +7,7 @@ import bcrypt
 from http.server import BaseHTTPRequestHandler, HTTPServer
 from flask import Flask, app, request, jsonify, send_from_directory
 
+app = Flask(__name__)
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -293,9 +294,6 @@ if __name__ == "__main__":
         'previousTokenId': 1,
         'isApproveNFT': True
     }
-
-    # Save image to database
-    save_image(frontend_data['image'])
 
     # i = 0
     # for i in range(1, 100):
