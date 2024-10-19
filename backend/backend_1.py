@@ -1,8 +1,13 @@
-from flask import Flask, request, jsonify
+import os
+from dotenv import load_dotenv
+from flask import Flask, request, jsonify, send_from_directory
 from web3 import Web3
 import json
 import time
 import logging
+
+# Load environment variables
+load_dotenv()
 
 app = Flask(__name__)
 
@@ -10,9 +15,11 @@ app = Flask(__name__)
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-# Replace with your actual Arbitrum RPC server
-ARBITRUM_RPC_URL = "https://arbitrum-sepolia.infura.io/v3/5012086e2f3449aeb17baa42b6c3b9a1"
-CONTRACT_ADDRESS = "0xeDEF0d73424d8623EF8adcB0E5807365e7F560a7"
+# Load variables from .env file
+ARBITRUM_RPC_URL = os.getenv("ARBITRUM_RPC_URL")
+CONTRACT_ADDRESS = os.getenv("CONTRACT_ADDRESS")
+BACKEND_1_URL = os.getenv("BACKEND_1_URL")
+ADDRESS_KEY_FOR_PAY_COMISIONS = os.getenv("ADDRESS_KEY_FOR_PAY_COMISIONS")
 
 # Connect to Arbitrum
 web3 = Web3(Web3.HTTPProvider(ARBITRUM_RPC_URL))
@@ -20,7 +27,7 @@ assert web3.is_connected(), "Could not connect to Arbitrum"
 logger.info("Connected to Arbitrum Testnet")
 
 # Load the contract ABI
-with open('artifacts/contracts/EmployeeNFT.sol/EmployeeNFT.json') as f:
+with open(os.path.join(os.path.dirname(__file__), 'artifacts/contracts/EmployeeNFT.sol/EmployeeNFT.json')) as f:
     contract_json = json.load(f)
     CONTRACT_ABI = contract_json['abi']
 
@@ -33,18 +40,8 @@ def send_data():
     data = request.get_json()
     if data:
         # Mint the NFT to the blockchain
-
-
-        # Получить текущий timestamp
         timestamp = int(time.time())
-        # Reformate in uint256
-        # Преобразовать в uint256
-        uint256_timestamp = timestamp
-
-        # This address pays for new mint in blockchain 
-        # Адрес с котороого будет браться комиссия за выпуск новых NFT
-        address_key_for_pay_comisions = "0xc62c44c60935cf1ae6879263f787ef94f054ec34d8db3e050f04414a59a2c55b"
-        receipt = send_format_data_for_make_certificate(data, uint256_timestamp, data['recipientAddress'], address_key_for_pay_comisions)
+        receipt = send_format_data_for_make_certificate(data, timestamp, data['recipientAddress'], ADDRESS_KEY_FOR_PAY_COMISIONS)
         if receipt:
             return jsonify({"message": "Data received and NFT minted successfully"}), 200
         return jsonify({"error": "Failed to mint NFT on blockchain"}), 500
@@ -57,10 +54,7 @@ def get_valid_nfts():
     logger.info(f"Getting valid NFTs for user: {user_address}")
     if user_address:
         valid_nfts_for_user = get_right_address_NFT(user_address)
-
-        # Объединяем список valid_nfts_for_user в один JSON-объект
         result = {"nfts": valid_nfts_for_user}
-
         logger.info(f"Valid NFTs found: {valid_nfts_for_user}")
         return jsonify(result)
     logger.error("User address not provided")
@@ -83,7 +77,6 @@ def get_nfts_by_token_ids():
 def send_format_data_for_make_certificate(data, time_stamp, user_eth_address, private_key):
     try:
         current_gas_price = web3.eth.gas_price
-
         tx = contract.functions.mintEmployeeNFT(
             data['recipientAddress'],
             data['image'],
@@ -94,7 +87,6 @@ def send_format_data_for_make_certificate(data, time_stamp, user_eth_address, pr
             data['reason'],
             data['previousTokenId'],
             data['dataHashFromBackend']
-            
         ).build_transaction({
             'from': user_eth_address,
             'nonce': web3.eth.get_transaction_count(user_eth_address),
@@ -114,19 +106,6 @@ def send_format_data_for_make_certificate(data, time_stamp, user_eth_address, pr
     except Exception as e:
         logger.error(f"Error while sending data to smart contract: {str(e)}")
         return None
-
-# # Function to receive data for minting certificate
-# def get_data_for_make_certificate(image, text_message, tags, data_hash_from_backend, reason="", previous_token_id=0, is_approve_NFT=False):
-#     return {
-#         'recipientAddress': web3.eth.default_account,
-#         'image': image,
-#         'text': text_message,
-#         'tags': tags,
-#         'reason': reason,
-#         'previousTokenId': previous_token_id,
-#         'isApproveNFT': is_approve_NFT,
-#         'dataHashFromBackend': data_hash_from_backend
-#     }
 
 # Function to check NFT data against its hash
 def check_NFT_data_and_NFT_hash(employee_data):
