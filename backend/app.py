@@ -4,8 +4,13 @@ import json
 import logging
 import sqlite3
 import bcrypt
-from http.server import BaseHTTPRequestHandler, HTTPServer
-from flask import Flask, app, request, jsonify, send_from_directory
+from flask import Flask, request, jsonify, send_from_directory
+from werkzeug.utils import secure_filename
+from dotenv import load_dotenv
+import os
+
+# Load environment variables
+load_dotenv()
 
 app = Flask(__name__)
 
@@ -14,7 +19,13 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 # Backend_1 endpoint
-BACKEND_1_URL = "http://localhost:5000"  # Update with the actual backend_1 address
+BACKEND_1_URL = os.getenv('BACKEND_1_URL')
+
+# Configure upload folder
+UPLOAD_FOLDER = 'uploads'
+if not os.path.exists(UPLOAD_FOLDER):
+    os.makedirs(UPLOAD_FOLDER)
+app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 # Database connection for users
 def create_users_table():
@@ -80,9 +91,12 @@ def check_hash_with_hash_from_backend(nft_data):
 
 # Function to send data to backend_1
 def send_data_for_backend(frontend_data, is_update=False):
+    # Сохраняем файл изображения в базу данных и получаем ссылку
+    image_url = save_file_and_get_url(frontend_data['image'])
+    
     data = {
         "recipientAddress": frontend_data['recipientAddress'],
-        "image": frontend_data['image'],
+        "image": image_url,  # Вместо самого изображения передаем ссылку
         "text": frontend_data['text'],
         "tags": frontend_data['tags'],
         "reason": frontend_data['reason'] if is_update else "No reason",
@@ -139,7 +153,7 @@ def get_nfts_by_token_ids(user_eth_address, token_ids):
         data = response.json()
 
         # Фильтруем NFT на основе проверки хэша
-        valid_nfts = [nft for nft in valid_nfts if check_hash_with_hash_from_backend(nft, nft.get("hash_from_backend", ""))]
+        valid_nfts = [nft for nft in data.get("nfts", []) if check_hash_with_hash_from_backend(nft)]
 
         # Используем get_nft_chains для организации NFT в цепочки
         nft_chains = get_nft_chains(valid_nfts)
@@ -163,7 +177,7 @@ def get_valid_nfts(user_eth_address):
         logger.info(f"Valid NFTs received: {valid_nfts}")
 
         # Фильтруем NFT на основе проверки хэша
-        valid_nfts = [nft for nft in valid_nfts if check_hash_with_hash_from_backend(nft, nft.get("hash_from_backend", ""))]
+        valid_nfts = [nft for nft in valid_nfts if check_hash_with_hash_from_backend(nft)]
 
         # Используем get_nft_chains для организации NFT в цепочки
         nft_chains = get_nft_chains(valid_nfts)
@@ -256,7 +270,8 @@ def upload_file_data_base():
     if file.filename == '':
         return jsonify({"error": "No selected file"}), 400
     if file:
-        file_path = f"{app.config['UPLOAD_FOLDER']}/{file.filename}"
+        filename = secure_filename(file.filename)
+        file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
         file.save(file_path)
         return jsonify({"message": "File uploaded successfully", "file_url": file_path})
 
