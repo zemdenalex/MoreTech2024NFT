@@ -27,7 +27,7 @@ assert web3.is_connected(), "Could not connect to Arbitrum"
 logger.info("Connected to Arbitrum Testnet")
 
 # Load the contract ABI
-with open(os.path.join(os.path.dirname(__file__), 'artifacts/contracts/EmployeeNFT.sol/EmployeeNFT.json')) as f:
+with open(os.path.join(os.path.dirname(__file__), '../artifacts/contracts/EmployeeNFT.sol/EmployeeNFT.json')) as f:
     contract_json = json.load(f)
     CONTRACT_ABI = contract_json['abi']
 
