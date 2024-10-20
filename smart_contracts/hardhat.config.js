@@ -17,9 +17,9 @@ module.exports = {
     ]
   },
   networks: {
-    arbitrum: {
-      url: process.env.ARBITRUM_RPC_URL,
-      accounts: [process.env.PRIVATE_KEY] // Из .env файла
+    arbitrumSepolia: { // Одна сеть: Arbitrum Sepolia
+      url: process.env.ARBITRUM_RPC_URL, // Используем ARBITRUM_RPC_URL из .env
+      accounts: [process.env.PRIVATE_KEY] // Приватный ключ из .env
     }
   }
 };

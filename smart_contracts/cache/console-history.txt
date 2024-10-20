@@ -1,0 +1,5 @@
+.exit
+npx hardhat run scripts/deploy.js --network arbitrumSepolia
+exit
+учше
+npx hardhat console --network arbitrumSepolia

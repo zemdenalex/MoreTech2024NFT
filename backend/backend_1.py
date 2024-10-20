@@ -20,6 +20,7 @@ ARBITRUM_RPC_URL = os.getenv("ARBITRUM_RPC_URL")
 CONTRACT_ADDRESS = os.getenv("CONTRACT_ADDRESS")
 BACKEND_1_URL = os.getenv("BACKEND_1_URL")
 ADDRESS_KEY_FOR_PAY_COMISIONS = os.getenv("ADDRESS_KEY_FOR_PAY_COMISIONS")
+OWNER_ADDRESS = os.getenv("OWNER_ADDRESS")
 
 # Connect to Arbitrum
 web3 = Web3(Web3.HTTPProvider(ARBITRUM_RPC_URL))
@@ -73,16 +74,32 @@ def get_nfts_by_token_ids():
         return jsonify({"nfts": nfts}), 200
     return jsonify({"error": "User address or token IDs not provided"}), 400
 
-# Function to send data to smart contract
 def send_format_data_for_make_certificate(data, time_stamp, user_eth_address, private_key):
     try:
+        # Проверка всех обязательных полей данных
+        required_fields = ['recipientAddress', 'image', 'text', 'tags', 'isApproveNFT', 'reason', 'previousTokenId', 'hash_from_backend']
+        
+        # Проверяем, чтобы все необходимые поля были заполнены
+        for field in required_fields:
+            if data.get(field) is None:
+                logger.error(f"Поле {field} отсутствует или равно None")
+                return None
+
+       # Логирование данных перед отправкой
+        logger.info(f"recipientAddress: {data['recipientAddress']}")
+        logger.info(f"image: {data['image']}")
+        logger.info(f"text: {data['text']}")
+        logger.info(f"tags: {data['tags']}")
+        logger.info(f"hash_from_backend: {data['hash_from_backend']}")
+        logger.info(f"Передача данных в контракт: {data}")
+
         current_gas_price = web3.eth.gas_price
         tx = contract.functions.mintEmployeeNFT(
             data['recipientAddress'],
             data['image'],
             data['text'],
             time_stamp,
-            data['tags'],
+            tuple(data['tags']),  # Преобразуем список в кортеж
             data['isApproveNFT'],
             data['reason'],
             data['previousTokenId'],
@@ -94,17 +111,17 @@ def send_format_data_for_make_certificate(data, time_stamp, user_eth_address, pr
             'gasPrice': current_gas_price + web3.to_wei('2', 'gwei')
         })
 
-        # Sign the transaction with the sender's private key
+        # Подпись транзакции
         signed_tx = web3.eth.account.sign_transaction(tx, private_key=private_key)
 
-        # Send the transaction
+        # Отправка транзакции
         tx_hash = web3.eth.send_raw_transaction(signed_tx.raw_transaction)
         receipt = web3.eth.wait_for_transaction_receipt(tx_hash)
-        logger.info(f"Transaction successful with hash: {tx_hash.hex()}")
+        logger.info(f"Транзакция успешна с хэшем: {tx_hash.hex()}")
         return receipt
 
     except Exception as e:
-        logger.error(f"Error while sending data to smart contract: {str(e)}")
+        logger.error(f"Ошибка при отправке данных в смарт-контракт: {str(e)}")
         return None
 
 # Function to check NFT data against its hash
@@ -289,7 +306,7 @@ if __name__ == "__main__":
             "recipientAddress": "0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab",
             "image": "image_url_1",
             "text": "Sample text for NFT 1",
-            "tags": "tag1, tag2",
+            "tags": ["tag1", "tag2"],  # Массив строк для tags
             "isApproveNFT": True,
             "reason": "Award for performance",
             "previousTokenId": 0,
@@ -299,7 +316,7 @@ if __name__ == "__main__":
             "recipientAddress": "0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab",
             "image": "image_url_2",
             "text": "Sample text for NFT 2",
-            "tags": "tag3, tag4",
+            "tags": ["tag3", "tag4"],  # Массив строк для tags
             "isApproveNFT": True,
             "reason": "Award for project completion",
             "previousTokenId": 1,
@@ -310,7 +327,9 @@ if __name__ == "__main__":
     # Минтим несколько NFT
     for data in sample_nfts_data:
         timestamp = int(time.time())
-        receipt = send_format_data_for_make_certificate(data, timestamp, data['recipientAddress'], ADDRESS_KEY_FOR_PAY_COMISIONS)
+        # Проверяем параметры перед вызовом
+        logger.info(f"Минтинг NFT для {data['recipientAddress']} с параметрами: {data}")
+        receipt = send_format_data_for_make_certificate(data, timestamp, OWNER_ADDRESS, ADDRESS_KEY_FOR_PAY_COMISIONS)
         if receipt:
             logger.info(f"NFT для {data['recipientAddress']} успешно создан с транзакцией {receipt['transactionHash'].hex()}")
         else:
