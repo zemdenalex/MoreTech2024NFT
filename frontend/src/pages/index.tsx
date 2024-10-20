@@ -21,9 +21,12 @@ const Home = () => {
   // Fetch NFTs when the component mounts
   useEffect(() => {
     axios
-      .get('http://194.87.46.228:5001/get-valid-nfts?userAddress=0xYourAddressHere')
+      .post('http://194.87.46.228:5001/get_valid_nfts', {
+        user_eth_address: '0xYourAddressHere'  // Replace with actual address
+      })
       .then((response) => {
-        setData(response.data); // Store response data
+        console.log('Fetched NFT data:', response.data); // Log response
+        setData(response.data); // Assuming response.data is an array of NFT objects
       })
       .catch((error) => {
         console.error('Error fetching data:', error);
@@ -47,7 +50,7 @@ const Home = () => {
 
     // Make a POST request to add the NFT
     axios
-      .post('http://194.87.46.228:5001/send-data', nftData)
+      .post('http://194.87.46.228:5001/send_data_for_backend', nftData)
       .then((response) => {
         console.log('NFT added:', response.data);
         setLoading(false); // Stop loading after request completes
@@ -62,7 +65,9 @@ const Home = () => {
     <div className="flex flex-col items-center justify-center h-screen">
       <h1 className="text-4xl font-bold mb-4">NFT Data from Backend</h1>
 
-      {data ? (
+      {loading ? (
+        <p>Loading data...</p>
+      ) : data && data.length > 0 ? (
         <div className="w-full max-w-4xl">
           {data.map((nft) => (
             <div key={nft.tokenId} className="p-4 bg-gray-100 rounded-lg mb-4">
@@ -76,7 +81,7 @@ const Home = () => {
           ))}
         </div>
       ) : (
-        <p>Loading data...</p>
+        <p>No data found.</p>
       )}
 
       {/* Button to add an NFT */}
