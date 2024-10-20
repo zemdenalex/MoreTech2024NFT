@@ -43,7 +43,7 @@ const Home = () => {
         console.log('NFT Chains got:', response.data);
         setValidNFTs(response.data)
         setLoading(false); // Stop loading after request completes
-        handleGetNFTData;
+        handleGetNFTData();
       })
       .catch((error) => {
         console.error('Error getting NFT Chains:', error);
