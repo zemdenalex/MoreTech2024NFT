@@ -244,6 +244,10 @@ def upload_file_data_base():
         save_file_and_get_url(file_path)
         return jsonify({"message": "File uploaded successfully", "file_url": file_path})
 
+@app.route('/')
+def index():
+    return "Welcome to the frontend server!"
+
 @app.route('/file/<filename>', methods=['GET'])
 def get_file_data_base(filename):
     return send_from_directory(app.config['UPLOAD_FOLDER'], filename)
