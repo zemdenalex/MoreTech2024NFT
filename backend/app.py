@@ -252,6 +252,84 @@ def index():
 def get_file_data_base(filename):
     return send_from_directory(app.config['UPLOAD_FOLDER'], filename)
 
+@app.route('/login_user', methods=['POST'])
+def login_user():
+    data = request.json
+    username_or_email = data.get('username_or_email')
+    password = data.get('password')
+    if login_user(username_or_email, password):
+        return jsonify({"message": "Login successful"})
+    else:
+        return jsonify({"error": "Invalid credentials"}), 401
+
+@app.route('/register_user', methods=['POST'])
+def register_user():
+    data = request.json
+    email = data.get('email')
+    username = data.get('username')
+    password = data.get('password')
+    wallet_id = data.get('wallet_id')
+    register_user(email, username, password, wallet_id)
+    return jsonify({"message": "User registered successfully"})
+
+@app.route('/get_lite_filtered_actual_valid_nfts', methods=['POST'])
+def get_lite_filtered_actual_valid_nfts():
+    data = request.json
+    tags = data.get('tags')
+    user_eth_address = data.get('user_eth_address')
+    nft_chains = get_valid_nfts(user_eth_address)
+    actual_valid_nfts = get_actual_valid_nfts(nft_chains)
+    filtered_nfts = get_lite_filtered_actual_valid_nfts(actual_valid_nfts, tags)
+    return jsonify(filtered_nfts)
+
+@app.route('/get_strong_filtered_actual_valid_nfts', methods=['POST'])
+def get_strong_filtered_actual_valid_nfts():
+    data = request.json
+    tags = data.get('tags')
+    user_eth_address = data.get('user_eth_address')
+    nft_chains = get_valid_nfts(user_eth_address)
+    actual_valid_nfts = get_actual_valid_nfts(nft_chains)
+    filtered_nfts = get_strong_filtered_actual_valid_nfts(actual_valid_nfts, tags)
+    return jsonify(filtered_nfts)
+
+@app.route('/get_actual_valid_nfts', methods=['POST'])
+def get_actual_valid_nfts():
+    data = request.json
+    user_eth_address = data.get('user_eth_address')
+    nft_chains = get_valid_nfts(user_eth_address)
+    actual_valid_nfts = get_actual_valid_nfts(nft_chains)
+    return jsonify(actual_valid_nfts)
+
+@app.route('/get_valid_nfts', methods=['POST'])
+def get_valid_nfts():
+    data = request.json
+    user_eth_address = data.get('user_eth_address')
+    nft_chains = get_valid_nfts(user_eth_address)
+    return jsonify(nft_chains)
+
+@app.route('/get_nft_chains', methods=['POST'])
+def get_nft_chains():
+    data = request.json
+    user_eth_address = data.get('user_eth_address')
+    nft_chains = get_valid_nfts(user_eth_address)
+    return jsonify(nft_chains)
+
+@app.route('/get_nfts_by_token_ids', methods=['POST'])
+def get_nfts_by_token_ids():
+    data = request.json
+    user_eth_address = data.get('user_eth_address')
+    token_ids = data.get('token_ids')
+    nft_chains = get_nfts_by_token_ids(user_eth_address, token_ids)
+    return jsonify(nft_chains)
+
+@app.route('/send_data_for_backend', methods=['POST'])
+def send_data_for_backend():
+    data = request.json
+    send_data_for_backend(data)
+    return jsonify({"message": "Data sent to backend successfully"})
+
+
+
 if __name__ == "__main__":
     # Create several unique NFTs and send them to backend_1
     nft_data_list = [
