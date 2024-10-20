@@ -249,7 +249,6 @@ def get_file_data_base(filename):
     return send_from_directory(app.config['UPLOAD_FOLDER'], filename)
 
 if __name__ == "__main__":
-    app.run(host='194.87.46.228', port=5001, debug=True)
     # Create several unique NFTs and send them to backend_1
     nft_data_list = [
         {
@@ -291,3 +290,4 @@ if __name__ == "__main__":
     ]
     for nft_data in nft_data_list:
         send_data_for_backend(nft_data)
+    app.run(host='194.87.46.228', port=5001, debug=True)
