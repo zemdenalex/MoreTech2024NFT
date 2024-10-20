@@ -249,4 +249,47 @@ def get_file_data_base(filename):
     return send_from_directory(app.config['UPLOAD_FOLDER'], filename)
 
 if __name__ == "__main__":
-    app.run(host='194.87.46.228', port=5000)
+    app.run(host='194.87.46.228', port=5001)
+     # Create several unique NFTs and send them to backend_1
+    nft_data_list = [
+        {
+            'recipientAddress': "0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab",
+            'image': "ipfs://image_link_1",
+            'text': "NFT #1",
+            'tags': ["tag1", "tag2"],
+            'reason': "Initial creation",
+            'previousTokenId': 0,
+            'isApproveNFT': False
+        },
+        {
+            'recipientAddress': "0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab",
+            'image': "ipfs://image_link_2",
+            'text': "NFT #2",
+            'tags': ["tag3", "tag4"],
+            'reason': "Initial creation",
+            'previousTokenId': 0,
+            'isApproveNFT': False
+        },
+        {
+            'recipientAddress': "0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab",
+            'image': "ipfs://image_link_3",
+            'text': "NFT #3",
+            'tags': ["tag5", "tag6"],
+            'reason': "Initial creation",
+            'previousTokenId': 0,
+            'isApproveNFT': False
+        },
+        {
+            'recipientAddress': "0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab",
+            'image': "ipfs://image_link_2",
+            'text': "NFT #2",
+            'tags': ["tag3", "tag4"],
+            'reason': "Trying to update NFT #2",
+            'previousTokenId': 2,
+            'isApproveNFT': False
+        }
+
+    ]
+
+    for nft_data in nft_data_list:
+        send_data_for_backend(nft_data)
