@@ -11,8 +11,6 @@ interface NFT {
   isApproveNFT: boolean;
 }
 
-let n = 0;
-
 const Home = () => {
   const [NFTChains, setNFTChains] = useState([]);
   const [validNFTs, setValidNFTs] = useState([]);
@@ -113,14 +111,7 @@ const Home = () => {
         <p>Loading data...</p>
       ) : data && data.length > 0 ? (
         <div className="w-full max-w-4xl">
-          {data.map((nft) => (
-            <div key={n+=1} className="p-4 bg-gray-100 rounded-lg mb-4">
-              <p><strong>Text:</strong> {nft.text}</p>
-              <p><strong>Tags:</strong> {nft.tags.join(', ')}</p>
-              <p><strong>Reason:</strong> {nft.reason}</p>
-              <img src={nft.image} className="w-32 h-32 object-cover mt-4" />
-            </div>
-          ))}
+          {data.toString()}
         </div>
       ) : (
         <p>No data found.</p>
