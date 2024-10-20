@@ -249,11 +249,9 @@ def get_file_data_base(filename):
     return send_from_directory(app.config['UPLOAD_FOLDER'], filename)
 
 if __name__ == "__main__":
-    
-app.run(host='194.87.46.228', port=5001, debug=True)
-    
-# Create several unique NFTs and send them to backend_1
-nft_data_list = [
+    app.run(host='194.87.46.228', port=5001, debug=True)
+    # Create several unique NFTs and send them to backend_1
+    nft_data_list = [
         {
             'recipientAddress': "0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab",
             'image': "ipfs://image_link_1",
@@ -291,6 +289,5 @@ nft_data_list = [
             'isApproveNFT': False
         }
     ]
-
-for nft_data in nft_data_list:
+    for nft_data in nft_data_list:
         send_data_for_backend(nft_data)

