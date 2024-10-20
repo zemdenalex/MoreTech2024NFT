@@ -1,37 +1,71 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 
+
 // Define the expected structure of the data
 interface NFT {
-  tokenId: number;
-  recipientAddress: string;
   image: string;
   text: string;
   tags: string[];
-  isApproveNFT: boolean;
   reason: string;
-  previousTokenId: number;
-  hash_from_backend: string;
+  isApproveNFT: boolean;
 }
 
+var n = 0;
+
 const Home = () => {
+  const [NFTChains, setNFTChains] = useState([]);
+  const [validNFTs, setValidNFTs] = useState([]);
   const [data, setData] = useState<NFT[] | null>(null); // Store NFT data
   const [loading, setLoading] = useState(false); // Add loading state for the button
 
   // Fetch NFTs when the component mounts
   useEffect(() => {
     axios
-      .post('http://194.87.46.228:5001/get_valid_nfts', {
-        user_eth_address: '0xYourAddressHere'  // Replace with actual address
+      .post('http://194.87.46.228:5001/get_nft_chains', {
+        user_eth_address: '0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab'  // Replace with actual address
       })
       .then((response) => {
         console.log('Fetched NFT data:', response.data); // Log response
-        setData(response.data); // Assuming response.data is an array of NFT objects
+        setNFTChains(response.data); // Assuming response.data is an array of NFT objects
       })
       .catch((error) => {
         console.error('Error fetching data:', error);
       });
   }, []);
+
+  const handleGetActualValidNFTs = () => {
+    setLoading(true);
+
+    axios
+      .post('http://194.87.46.228:5001/get_actual_valid_nfts', NFTChains)
+      .then((response) => {
+        console.log('NFT Chains got:', response.data);
+        setValidNFTs(response.data)
+        setLoading(false); // Stop loading after request completes
+        handleGetNFTData;
+      })
+      .catch((error) => {
+        console.error('Error getting NFT Chains:', error);
+        setLoading(false);
+      });
+  }
+
+  const handleGetNFTData = () => {
+    setLoading(true);
+
+    axios
+      .post('http://194.87.46.228:5001/prepare_nft_list_for_frontend', validNFTs)
+      .then((response) => {
+        console.log('NFT Data got:', response.data);
+        setData(response.data)
+        setLoading(false); // Stop loading after request completes
+      })
+      .catch((error) => {
+        console.error('Error getting NFT Data:', error);
+        setLoading(false);
+      });
+  }
 
   // Function to handle button click and send a request to app.py
   const handleAddNFT = () => {
@@ -39,7 +73,7 @@ const Home = () => {
 
     // Define the data to send (you can modify this data as needed)
     const nftData = {
-      recipientAddress: '0xYourAddressHere',
+      recipientAddress: '0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab',
       image: 'ipfs://image_link',
       text: 'New NFT',
       tags: ['tag1', 'tag2'],
@@ -47,6 +81,8 @@ const Home = () => {
       previousTokenId: 0,
       isApproveNFT: false,
     };
+
+    
 
     // Make a POST request to add the NFT
     axios
@@ -63,6 +99,14 @@ const Home = () => {
 
   return (
     <div className="flex flex-col items-center justify-center h-screen">
+      <button
+        onClick={handleGetActualValidNFTs}
+        className="mt-6 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
+        disabled={loading} // Disable while loading
+      >
+        {loading ? 'Getting Data' : 'Get Actual Valid NFTs'}
+      </button>
+      
       <h1 className="text-4xl font-bold mb-4">NFT Data from Backend</h1>
 
       {loading ? (
@@ -70,13 +114,11 @@ const Home = () => {
       ) : data && data.length > 0 ? (
         <div className="w-full max-w-4xl">
           {data.map((nft) => (
-            <div key={nft.tokenId} className="p-4 bg-gray-100 rounded-lg mb-4">
-              <h2 className="text-2xl font-bold">NFT #{nft.tokenId}</h2>
-              <p><strong>Recipient Address:</strong> {nft.recipientAddress}</p>
+            <div key={n+=1} className="p-4 bg-gray-100 rounded-lg mb-4">
               <p><strong>Text:</strong> {nft.text}</p>
               <p><strong>Tags:</strong> {nft.tags.join(', ')}</p>
               <p><strong>Reason:</strong> {nft.reason}</p>
-              <img src={nft.image} alt={`NFT ${nft.tokenId}`} className="w-32 h-32 object-cover mt-4" />
+              <img src={nft.image} className="w-32 h-32 object-cover mt-4" />
             </div>
           ))}
         </div>

@@ -282,6 +282,13 @@ def get_lite_filtered_actual_valid_nfts():
     filtered_nfts = get_lite_filtered_actual_valid_nfts(actual_valid_nfts, tags)
     return jsonify(filtered_nfts)
 
+@app.route('/prepare_nft_list_for_frontend', methods=['POST'])
+def prepare_nft_list_for_frontend_route():
+    data = request.json
+    nft_list = data.get('nft_list', [])
+    updated_nft_list = prepare_nft_list_for_frontend(nft_list)
+    return jsonify(updated_nft_list)
+
 @app.route('/get_strong_filtered_actual_valid_nfts', methods=['POST'])
 def get_strong_filtered_actual_valid_nfts():
     data = request.json
