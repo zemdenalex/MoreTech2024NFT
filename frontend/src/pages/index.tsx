@@ -11,7 +11,7 @@ interface NFT {
   isApproveNFT: boolean;
 }
 
-var n = 0;
+let n = 0;
 
 const Home = () => {
   const [NFTChains, setNFTChains] = useState([]);
