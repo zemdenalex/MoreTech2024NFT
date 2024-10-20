@@ -19,7 +19,7 @@ logger = logging.getLogger(__name__)
 ARBITRUM_RPC_URL = os.getenv("ARBITRUM_RPC_URL")
 CONTRACT_ADDRESS = os.getenv("CONTRACT_ADDRESS")
 BACKEND_1_URL = os.getenv("BACKEND_1_URL")
-ADDRESS_KEY_FOR_PAY_COMISIONS = os.getenv("ADDRESS_KEY_FOR_PAY_COMISIONS")
+ADDRESS_KEY_FOR_PAY_COMISSIONS = os.getenv("ADDRESS_KEY_FOR_PAY_COMISSIONS")
 OWNER_ADDRESS = os.getenv("OWNER_ADDRESS")
 
 # Connect to Arbitrum
@@ -42,7 +42,7 @@ def send_data():
     if data:
         # Mint the NFT to the blockchain
         timestamp = int(time.time())
-        receipt = send_format_data_for_make_certificate(data, timestamp, data['recipientAddress'], ADDRESS_KEY_FOR_PAY_COMISIONS)
+        receipt = send_format_data_for_make_certificate(data, timestamp, data['recipientAddress'], ADDRESS_KEY_FOR_PAY_COMISSIONS)
         if receipt:
             return jsonify({"message": "Data received and NFT minted successfully"}), 200
         return jsonify({"error": "Failed to mint NFT on blockchain"}), 500
@@ -329,7 +329,7 @@ if __name__ == "__main__":
         timestamp = int(time.time())
         # Проверяем параметры перед вызовом
         logger.info(f"Минтинг NFT для {data['recipientAddress']} с параметрами: {data}")
-        receipt = send_format_data_for_make_certificate(data, timestamp, OWNER_ADDRESS, ADDRESS_KEY_FOR_PAY_COMISIONS)
+        receipt = send_format_data_for_make_certificate(data, timestamp, OWNER_ADDRESS, ADDRESS_KEY_FOR_PAY_COMISSIONS)
         if receipt:
             logger.info(f"NFT для {data['recipientAddress']} успешно создан с транзакцией {receipt['transactionHash'].hex()}")
         else:
