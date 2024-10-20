@@ -210,6 +210,79 @@ def get_right_address_NFT_by_token_ids(user_address, token_ids):
 def home():
     return "Welcome to the backend server!"
 
+# Function to get all ERC-721 tokens for a user address using Arbitrum
+
+def get_all_erc721_tokens(user_address):
+    try:
+        total_tokens = contract.functions.tokenCounter().call()
+        user_tokens = []
+
+        for token_id in range(total_tokens):
+            owner = contract.functions.ownerOf(token_id).call()
+            if owner.strip().lower() == user_address.strip().lower():
+                user_tokens.append({"tokenID": token_id})
+
+        return user_tokens
+    except Exception as e:
+        logger.error(f"Ошибка при получении ERC-721 токенов: {str(e)}")
+    
+    return []
+
+# Функция для получения всех валидных ERC-721 NFT, принадлежащих кошельку пользователя
+def get_user_valid_nfts(user_address):
+    valid_nfts = []
+    try:
+        # Получение всех токенов стандарта ERC-721, принадлежащих кошельку пользователя
+        all_nfts = get_all_erc721_tokens(user_address)
+        
+        # Проходим по каждому найденному токену
+        for nft in all_nfts:
+            try:
+                token_id = nft['tokenID']
+                employee_data = contract.functions.getEmployeeData(int(token_id)).call()
+                
+                # Извлечение адреса получателя из данных токена
+                recipient_address = employee_data[0]
+                
+                # Проверяем, принадлежит ли данный токен искомому пользователю и соответствует ли он критериям, используя проверку хэша
+                if recipient_address.strip().lower() == user_address.strip().lower():
+                    if check_NFT_data_and_NFT_hash(employee_data):
+                        # Преобразуем данные в формат, подходящий для JSON-сериализации
+                        employee_data_dict = {
+                            "tokenId": token_id,
+                            "recipientAddress": employee_data[0],
+                            "image": employee_data[1],
+                            "text": employee_data[2],
+                            "tags": employee_data[4],
+                            "isApproveNFT": employee_data[5],
+                            "reason": employee_data[6],
+                            "previousTokenId": employee_data[7],
+                            "hash_from_backend": employee_data[8]
+                        }
+                        valid_nfts.append(employee_data_dict)
+            except Exception as e:
+                logger.error(f"Ошибка при обработке токена ID {nft['tokenID']}: {str(e)}")
+    except Exception as e:
+        logger.error(f"Ошибка при получении NFT для пользователя: {str(e)}")
+    
+    return valid_nfts
+
+# Пример использования функции
+@app.route('/get-user-valid-nfts', methods=['GET'])
+def get_user_valid_nfts_endpoint():
+    user_address = request.args.get('userAddress')
+    logger.info(f"Получение валидных NFT для пользователя: {user_address}")
+    
+    if user_address:
+        user_valid_nfts = get_user_valid_nfts(user_address)
+        return jsonify({"nfts": user_valid_nfts}), 200
+    
+    logger.error("Адрес пользователя не указан")
+    return jsonify({"error": "Адрес пользователя не указан"}), 400
+
+
+
+
 # Example usage
 if __name__ == "__main__":
 
