@@ -21,7 +21,7 @@ const Home = () => {
   // Fetch NFTs when the component mounts
   useEffect(() => {
     axios
-      .get('http://194.87.46.228:5000/get-valid-nfts?userAddress=0xYourAddressHere')
+      .get('http://194.87.46.228:5001/get-valid-nfts?userAddress=0xYourAddressHere')
       .then((response) => {
         setData(response.data); // Store response data
       })
@@ -47,7 +47,7 @@ const Home = () => {
 
     // Make a POST request to add the NFT
     axios
-      .post('http://194.87.46.228:5000/send-data', nftData)
+      .post('http://194.87.46.228:5001/send-data', nftData)
       .then((response) => {
         console.log('NFT added:', response.data);
         setLoading(false); // Stop loading after request completes
