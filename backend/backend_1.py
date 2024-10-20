@@ -27,7 +27,7 @@ assert web3.is_connected(), "Could not connect to Arbitrum"
 logger.info("Connected to Arbitrum Testnet")
 
 # Load the contract ABI
-with open(os.path.join(os.path.dirname(__file__), '../artifacts/contracts/EmployeeNFT.sol/EmployeeNFT.json')) as f:
+with open(os.path.join(os.path.dirname(__file__), '../smart_contracts/artifacts/contracts/EmployeeNFT.sol/EmployeeNFT.json')) as f:
     contract_json = json.load(f)
     CONTRACT_ABI = contract_json['abi']
 
@@ -208,4 +208,4 @@ def get_right_address_NFT_by_token_ids(user_address, token_ids):
 
 # Example usage
 if __name__ == "__main__":
-    app.run(port=5000, debug=True)
+    app.run(host='0.0.0.0', port=5000, debug=True)
