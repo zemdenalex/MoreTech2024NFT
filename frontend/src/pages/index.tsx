@@ -1,8 +1,21 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 
+// Define the expected structure of the data
+interface NFT {
+  tokenId: number;
+  recipientAddress: string;
+  image: string;
+  text: string;
+  tags: string[];
+  isApproveNFT: boolean;
+  reason: string;
+  previousTokenId: number;
+  hash_from_backend: string;
+}
+
 const Home = () => {
-  const [data, setData] = useState<any>(null);
+  const [data, setData] = useState<NFT[] | null>(null);  // Use specific type instead of 'any'
 
   useEffect(() => {
     // Make a request to your backend
