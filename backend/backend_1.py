@@ -282,7 +282,39 @@ def get_user_valid_nfts_endpoint():
 
 
 
-
-# Example usage
 if __name__ == "__main__":
+    # Пример данных для создания нескольких NFT с использованием указанного адреса
+    sample_nfts_data = [
+        {
+            "recipientAddress": "0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab",
+            "image": "image_url_1",
+            "text": "Sample text for NFT 1",
+            "tags": "tag1, tag2",
+            "isApproveNFT": True,
+            "reason": "Award for performance",
+            "previousTokenId": 0,
+            "hash_from_backend": "hash_value_1"
+        },
+        {
+            "recipientAddress": "0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab",
+            "image": "image_url_2",
+            "text": "Sample text for NFT 2",
+            "tags": "tag3, tag4",
+            "isApproveNFT": True,
+            "reason": "Award for project completion",
+            "previousTokenId": 1,
+            "hash_from_backend": "hash_value_2"
+        }
+    ]
+
+    # Минтим несколько NFT
+    for data in sample_nfts_data:
+        timestamp = int(time.time())
+        receipt = send_format_data_for_make_certificate(data, timestamp, data['recipientAddress'], ADDRESS_KEY_FOR_PAY_COMISIONS)
+        if receipt:
+            logger.info(f"NFT для {data['recipientAddress']} успешно создан с транзакцией {receipt['transactionHash'].hex()}")
+        else:
+            logger.error(f"Ошибка при создании NFT для {data['recipientAddress']}")
+
+    # Запуск приложения
     app.run(host='0.0.0.0', port=5000, debug=True)
