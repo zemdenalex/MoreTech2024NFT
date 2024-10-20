@@ -29,19 +29,19 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 # Database connection for users
 user_db_connection = psycopg2.connect(
-    host="your_server_ip",
+    host="194.87.46.228",
     database="user_database",
-    user="my_user",
-    password="my_password"
+    user="admin",
+    password="ghjnjnbg"
 )
 user_cursor = user_db_connection.cursor()
 
 # Database connection for files
 files_db_connection = psycopg2.connect(
-    host="your_server_ip",
+    host="194.87.46.228",
     database="files_database",
-    user="my_user",
-    password="my_password"
+    user="admin",
+    password="ghjnjnbg"
 )
 files_cursor = files_db_connection.cursor()
 
@@ -249,4 +249,4 @@ def get_file_data_base(filename):
     return send_from_directory(app.config['UPLOAD_FOLDER'], filename)
 
 if __name__ == "__main__":
-    app.run(host='194.87.46.228', port=5000)
+    app.run(host='194.87.46.228', port=5001, debug=True)
