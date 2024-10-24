@@ -143,3 +143,1188 @@ INFO:werkzeug: * Restarting with stat
     >>>>>>> 3a90cbf0d646113ba686368da2cba25f115dd8e4
             ^
 SyntaxError: invalid decimal literal
+INFO:__main__:Connected to Arbitrum Testnet
+INFO:__main__:Минтинг NFT для 0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab с параметрами: {'recipientAddress': '0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab', 'image': 'image_url_1', 'text': 'Sample text for NFT 1', 'tags': ['tag1', 'tag2'], 'isApproveNFT': True, 'reason': 'Award for performance', 'previousTokenId': 0, 'hash_from_backend': 'hash_value_1'}
+INFO:__main__:recipientAddress: 0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab
+INFO:__main__:image: image_url_1
+INFO:__main__:text: Sample text for NFT 1
+INFO:__main__:tags: ['tag1', 'tag2']
+INFO:__main__:hash_from_backend: hash_value_1
+INFO:__main__:Передача данных в контракт: {'recipientAddress': '0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab', 'image': 'image_url_1', 'text': 'Sample text for NFT 1', 'tags': ['tag1', 'tag2'], 'isApproveNFT': True, 'reason': 'Award for performance', 'previousTokenId': 0, 'hash_from_backend': 'hash_value_1'}
+INFO:__main__:Транзакция успешна с хэшем: c8c45d19f68ad6c330b662499cfc5e81afbaada21e8405802dab9f84ca30ecff
+INFO:__main__:NFT для 0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab успешно создан с транзакцией c8c45d19f68ad6c330b662499cfc5e81afbaada21e8405802dab9f84ca30ecff
+INFO:__main__:Минтинг NFT для 0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab с параметрами: {'recipientAddress': '0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab', 'image': 'image_url_2', 'text': 'Sample text for NFT 2', 'tags': ['tag3', 'tag4'], 'isApproveNFT': True, 'reason': 'Award for project completion', 'previousTokenId': 1, 'hash_from_backend': 'hash_value_2'}
+INFO:__main__:recipientAddress: 0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab
+INFO:__main__:image: image_url_2
+INFO:__main__:text: Sample text for NFT 2
+INFO:__main__:tags: ['tag3', 'tag4']
+INFO:__main__:hash_from_backend: hash_value_2
+INFO:__main__:Передача данных в контракт: {'recipientAddress': '0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab', 'image': 'image_url_2', 'text': 'Sample text for NFT 2', 'tags': ['tag3', 'tag4'], 'isApproveNFT': True, 'reason': 'Award for project completion', 'previousTokenId': 1, 'hash_from_backend': 'hash_value_2'}
+INFO:__main__:Транзакция успешна с хэшем: 6e78ad8f0c3a6ac349407fcf3e018694809ef9c193fe7ca08fcb0062604d2682
+INFO:__main__:NFT для 0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab успешно создан с транзакцией 6e78ad8f0c3a6ac349407fcf3e018694809ef9c193fe7ca08fcb0062604d2682
+ * Serving Flask app 'backend_1'
+ * Debug mode: on
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://194.87.46.228:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:__main__:Connected to Arbitrum Testnet
+INFO:__main__:Минтинг NFT для 0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab с параметрами: {'recipientAddress': '0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab', 'image': 'image_url_1', 'text': 'Sample text for NFT 1', 'tags': ['tag1', 'tag2'], 'isApproveNFT': True, 'reason': 'Award for performance', 'previousTokenId': 0, 'hash_from_backend': 'hash_value_1'}
+INFO:__main__:recipientAddress: 0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab
+INFO:__main__:image: image_url_1
+INFO:__main__:text: Sample text for NFT 1
+INFO:__main__:tags: ['tag1', 'tag2']
+INFO:__main__:hash_from_backend: hash_value_1
+INFO:__main__:Передача данных в контракт: {'recipientAddress': '0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab', 'image': 'image_url_1', 'text': 'Sample text for NFT 1', 'tags': ['tag1', 'tag2'], 'isApproveNFT': True, 'reason': 'Award for performance', 'previousTokenId': 0, 'hash_from_backend': 'hash_value_1'}
+INFO:__main__:Транзакция успешна с хэшем: 01e0527bd2bca29e9dee4d88db0e43ae7370edc298a0b1c3daa6454878baa4da
+INFO:__main__:NFT для 0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab успешно создан с транзакцией 01e0527bd2bca29e9dee4d88db0e43ae7370edc298a0b1c3daa6454878baa4da
+INFO:__main__:Минтинг NFT для 0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab с параметрами: {'recipientAddress': '0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab', 'image': 'image_url_2', 'text': 'Sample text for NFT 2', 'tags': ['tag3', 'tag4'], 'isApproveNFT': True, 'reason': 'Award for project completion', 'previousTokenId': 1, 'hash_from_backend': 'hash_value_2'}
+INFO:__main__:recipientAddress: 0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab
+INFO:__main__:image: image_url_2
+INFO:__main__:text: Sample text for NFT 2
+INFO:__main__:tags: ['tag3', 'tag4']
+INFO:__main__:hash_from_backend: hash_value_2
+INFO:__main__:Передача данных в контракт: {'recipientAddress': '0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab', 'image': 'image_url_2', 'text': 'Sample text for NFT 2', 'tags': ['tag3', 'tag4'], 'isApproveNFT': True, 'reason': 'Award for project completion', 'previousTokenId': 1, 'hash_from_backend': 'hash_value_2'}
+INFO:__main__:Транзакция успешна с хэшем: 09e3a711db0fcf2869798e369cf91df5dce5abfa7af97e8c4f2614d882bb6ac3
+INFO:__main__:NFT для 0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab успешно создан с транзакцией 09e3a711db0fcf2869798e369cf91df5dce5abfa7af97e8c4f2614d882bb6ac3
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 465-234-999
+INFO:__main__:recipientAddress: 0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab
+INFO:__main__:image: /file/image_link_1
+INFO:__main__:text: NFT #1
+INFO:__main__:tags: ['tag1', 'tag2']
+INFO:__main__:hash_from_backend: 436f197ccde04d2acab1bac307c98e1d676949c535d1e8d2b837404a202eecc4
+INFO:__main__:Передача данных в контракт: {'recipientAddress': '0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab', 'image': '/file/image_link_1', 'text': 'NFT #1', 'tags': ['tag1', 'tag2'], 'reason': 'No reason', 'previousTokenId': 0, 'isApproveNFT': False, 'hash_from_backend': '436f197ccde04d2acab1bac307c98e1d676949c535d1e8d2b837404a202eecc4'}
+INFO:__main__:Транзакция успешна с хэшем: eaf3ae5c95c39d14ffc76d79daedafd2a80f2fc2597e29c837874505242a02b6
+INFO:werkzeug:194.87.46.228 - - [20/Oct/2024 15:17:13] "POST /send-data HTTP/1.1" 200 -
+INFO:__main__:recipientAddress: 0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab
+INFO:__main__:image: /file/image_link_2
+INFO:__main__:text: NFT #2
+INFO:__main__:tags: ['tag3', 'tag4']
+INFO:__main__:hash_from_backend: 305d06233746875f7c6d42ed10ccb9a794a90cc46b56f7df41e4076a4ba08d7c
+INFO:__main__:Передача данных в контракт: {'recipientAddress': '0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab', 'image': '/file/image_link_2', 'text': 'NFT #2', 'tags': ['tag3', 'tag4'], 'reason': 'No reason', 'previousTokenId': 0, 'isApproveNFT': False, 'hash_from_backend': '305d06233746875f7c6d42ed10ccb9a794a90cc46b56f7df41e4076a4ba08d7c'}
+INFO:__main__:Транзакция успешна с хэшем: e25f8a893e49b78af46918304e746d4adece6af4aa381f454a112447fec40e58
+INFO:werkzeug:194.87.46.228 - - [20/Oct/2024 15:17:14] "POST /send-data HTTP/1.1" 200 -
+INFO:__main__:recipientAddress: 0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab
+INFO:__main__:image: /file/image_link_3
+INFO:__main__:text: NFT #3
+INFO:__main__:tags: ['tag5', 'tag6']
+INFO:__main__:hash_from_backend: 570fc7be9ad0bf9debaf0496e90db3784cf415368923a7aab8df4118880b72f8
+INFO:__main__:Передача данных в контракт: {'recipientAddress': '0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab', 'image': '/file/image_link_3', 'text': 'NFT #3', 'tags': ['tag5', 'tag6'], 'reason': 'No reason', 'previousTokenId': 0, 'isApproveNFT': False, 'hash_from_backend': '570fc7be9ad0bf9debaf0496e90db3784cf415368923a7aab8df4118880b72f8'}
+INFO:__main__:Транзакция успешна с хэшем: 0983dd234448d1fa5ad1e836f1044654d070e228a23c2b4cae4ae22b87492d4e
+INFO:werkzeug:194.87.46.228 - - [20/Oct/2024 15:17:15] "POST /send-data HTTP/1.1" 200 -
+INFO:__main__:recipientAddress: 0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab
+INFO:__main__:image: /file/image_link_2
+INFO:__main__:text: NFT #2
+INFO:__main__:tags: ['tag3', 'tag4']
+INFO:__main__:hash_from_backend: 305d06233746875f7c6d42ed10ccb9a794a90cc46b56f7df41e4076a4ba08d7c
+INFO:__main__:Передача данных в контракт: {'recipientAddress': '0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab', 'image': '/file/image_link_2', 'text': 'NFT #2', 'tags': ['tag3', 'tag4'], 'reason': 'No reason', 'previousTokenId': 0, 'isApproveNFT': False, 'hash_from_backend': '305d06233746875f7c6d42ed10ccb9a794a90cc46b56f7df41e4076a4ba08d7c'}
+INFO:__main__:Транзакция успешна с хэшем: 472c8e62b8e66bfc4022fea10623ea5907c766f243e9c01bf967df6de4d2e1d2
+INFO:werkzeug:194.87.46.228 - - [20/Oct/2024 15:17:16] "POST /send-data HTTP/1.1" 200 -
+INFO:__main__:recipientAddress: 0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab
+INFO:__main__:image: /file/image_link_1
+INFO:__main__:text: NFT #1
+INFO:__main__:tags: ['tag1', 'tag2']
+INFO:__main__:hash_from_backend: 436f197ccde04d2acab1bac307c98e1d676949c535d1e8d2b837404a202eecc4
+INFO:__main__:Передача данных в контракт: {'recipientAddress': '0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab', 'image': '/file/image_link_1', 'text': 'NFT #1', 'tags': ['tag1', 'tag2'], 'reason': 'No reason', 'previousTokenId': 0, 'isApproveNFT': False, 'hash_from_backend': '436f197ccde04d2acab1bac307c98e1d676949c535d1e8d2b837404a202eecc4'}
+INFO:__main__:Транзакция успешна с хэшем: 210fe65cfb366908d03600e991ec1ffbf99e8b6478afccb01c814e5173764de2
+INFO:werkzeug:194.87.46.228 - - [20/Oct/2024 15:17:18] "POST /send-data HTTP/1.1" 200 -
+INFO:__main__:recipientAddress: 0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab
+INFO:__main__:image: /file/image_link_2
+INFO:__main__:text: NFT #2
+INFO:__main__:tags: ['tag3', 'tag4']
+INFO:__main__:hash_from_backend: 305d06233746875f7c6d42ed10ccb9a794a90cc46b56f7df41e4076a4ba08d7c
+INFO:__main__:Передача данных в контракт: {'recipientAddress': '0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab', 'image': '/file/image_link_2', 'text': 'NFT #2', 'tags': ['tag3', 'tag4'], 'reason': 'No reason', 'previousTokenId': 0, 'isApproveNFT': False, 'hash_from_backend': '305d06233746875f7c6d42ed10ccb9a794a90cc46b56f7df41e4076a4ba08d7c'}
+INFO:__main__:Транзакция успешна с хэшем: 86ec81ccb2662da1678ede0e5a0b0430d55bbbe16cd6a4b86e455d8f82a1da30
+INFO:werkzeug:194.87.46.228 - - [20/Oct/2024 15:17:19] "POST /send-data HTTP/1.1" 200 -
+INFO:__main__:recipientAddress: 0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab
+INFO:__main__:image: /file/image_link_3
+INFO:__main__:text: NFT #3
+INFO:__main__:tags: ['tag5', 'tag6']
+INFO:__main__:hash_from_backend: 570fc7be9ad0bf9debaf0496e90db3784cf415368923a7aab8df4118880b72f8
+INFO:__main__:Передача данных в контракт: {'recipientAddress': '0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab', 'image': '/file/image_link_3', 'text': 'NFT #3', 'tags': ['tag5', 'tag6'], 'reason': 'No reason', 'previousTokenId': 0, 'isApproveNFT': False, 'hash_from_backend': '570fc7be9ad0bf9debaf0496e90db3784cf415368923a7aab8df4118880b72f8'}
+INFO:__main__:Транзакция успешна с хэшем: 824a35aa35c094e5d114e7047762d6237bd949ca1f750ec135764a73f2b35afb
+INFO:werkzeug:194.87.46.228 - - [20/Oct/2024 15:17:20] "POST /send-data HTTP/1.1" 200 -
+INFO:__main__:recipientAddress: 0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab
+INFO:__main__:image: /file/image_link_2
+INFO:__main__:text: NFT #2
+INFO:__main__:tags: ['tag3', 'tag4']
+INFO:__main__:hash_from_backend: 305d06233746875f7c6d42ed10ccb9a794a90cc46b56f7df41e4076a4ba08d7c
+INFO:__main__:Передача данных в контракт: {'recipientAddress': '0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab', 'image': '/file/image_link_2', 'text': 'NFT #2', 'tags': ['tag3', 'tag4'], 'reason': 'No reason', 'previousTokenId': 0, 'isApproveNFT': False, 'hash_from_backend': '305d06233746875f7c6d42ed10ccb9a794a90cc46b56f7df41e4076a4ba08d7c'}
+INFO:__main__:Транзакция успешна с хэшем: fdcbb554eb05813a26d9e75d460c6ba5f598d5781decc65941505935d32434a6
+INFO:werkzeug:194.87.46.228 - - [20/Oct/2024 15:17:20] "POST /send-data HTTP/1.1" 200 -
+INFO:__main__:recipientAddress: 0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab
+INFO:__main__:image: /file/image_link_1
+INFO:__main__:text: NFT #1
+INFO:__main__:tags: ['tag1', 'tag2']
+INFO:__main__:hash_from_backend: 436f197ccde04d2acab1bac307c98e1d676949c535d1e8d2b837404a202eecc4
+INFO:__main__:Передача данных в контракт: {'recipientAddress': '0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab', 'image': '/file/image_link_1', 'text': 'NFT #1', 'tags': ['tag1', 'tag2'], 'reason': 'No reason', 'previousTokenId': 0, 'isApproveNFT': False, 'hash_from_backend': '436f197ccde04d2acab1bac307c98e1d676949c535d1e8d2b837404a202eecc4'}
+INFO:__main__:Транзакция успешна с хэшем: 616c67127756b0d3c610440ca1845366f0071892e24fe6de132c30f050845803
+INFO:werkzeug:194.87.46.228 - - [20/Oct/2024 15:20:22] "POST /send-data HTTP/1.1" 200 -
+INFO:__main__:recipientAddress: 0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab
+INFO:__main__:image: /file/image_link_2
+INFO:__main__:text: NFT #2
+INFO:__main__:tags: ['tag3', 'tag4']
+INFO:__main__:hash_from_backend: 305d06233746875f7c6d42ed10ccb9a794a90cc46b56f7df41e4076a4ba08d7c
+INFO:__main__:Передача данных в контракт: {'recipientAddress': '0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab', 'image': '/file/image_link_2', 'text': 'NFT #2', 'tags': ['tag3', 'tag4'], 'reason': 'No reason', 'previousTokenId': 0, 'isApproveNFT': False, 'hash_from_backend': '305d06233746875f7c6d42ed10ccb9a794a90cc46b56f7df41e4076a4ba08d7c'}
+INFO:__main__:Транзакция успешна с хэшем: 3c2dd4991a7b5c97727d82fdf33fa8cef868d2736a7a728a91a4f824b5050cc7
+INFO:werkzeug:194.87.46.228 - - [20/Oct/2024 15:20:23] "POST /send-data HTTP/1.1" 200 -
+INFO:__main__:recipientAddress: 0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab
+INFO:__main__:image: /file/image_link_3
+INFO:__main__:text: NFT #3
+INFO:__main__:tags: ['tag5', 'tag6']
+INFO:__main__:hash_from_backend: 570fc7be9ad0bf9debaf0496e90db3784cf415368923a7aab8df4118880b72f8
+INFO:__main__:Передача данных в контракт: {'recipientAddress': '0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab', 'image': '/file/image_link_3', 'text': 'NFT #3', 'tags': ['tag5', 'tag6'], 'reason': 'No reason', 'previousTokenId': 0, 'isApproveNFT': False, 'hash_from_backend': '570fc7be9ad0bf9debaf0496e90db3784cf415368923a7aab8df4118880b72f8'}
+INFO:__main__:Транзакция успешна с хэшем: 02880d3d9f9945b7cc2d27d45c84b19236a33b68e50bcbad774286c031104eb4
+INFO:werkzeug:194.87.46.228 - - [20/Oct/2024 15:20:24] "POST /send-data HTTP/1.1" 200 -
+INFO:__main__:recipientAddress: 0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab
+INFO:__main__:image: /file/image_link_2
+INFO:__main__:text: NFT #2
+INFO:__main__:tags: ['tag3', 'tag4']
+INFO:__main__:hash_from_backend: 305d06233746875f7c6d42ed10ccb9a794a90cc46b56f7df41e4076a4ba08d7c
+INFO:__main__:Передача данных в контракт: {'recipientAddress': '0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab', 'image': '/file/image_link_2', 'text': 'NFT #2', 'tags': ['tag3', 'tag4'], 'reason': 'No reason', 'previousTokenId': 0, 'isApproveNFT': False, 'hash_from_backend': '305d06233746875f7c6d42ed10ccb9a794a90cc46b56f7df41e4076a4ba08d7c'}
+INFO:__main__:Транзакция успешна с хэшем: e10702d2a293181eb7f29770cc44e170e4b0f11ee2f9f0994f745828e39f0b34
+INFO:werkzeug:194.87.46.228 - - [20/Oct/2024 15:20:25] "POST /send-data HTTP/1.1" 200 -
+INFO:__main__:recipientAddress: 0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab
+INFO:__main__:image: /file/image_link_1
+INFO:__main__:text: NFT #1
+INFO:__main__:tags: ['tag1', 'tag2']
+INFO:__main__:hash_from_backend: 436f197ccde04d2acab1bac307c98e1d676949c535d1e8d2b837404a202eecc4
+INFO:__main__:Передача данных в контракт: {'recipientAddress': '0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab', 'image': '/file/image_link_1', 'text': 'NFT #1', 'tags': ['tag1', 'tag2'], 'reason': 'No reason', 'previousTokenId': 0, 'isApproveNFT': False, 'hash_from_backend': '436f197ccde04d2acab1bac307c98e1d676949c535d1e8d2b837404a202eecc4'}
+INFO:__main__:Транзакция успешна с хэшем: 12b3a9f7278825b0e8dcb9ffdda59c80553788dd753b9b744b955cb3951ccc23
+INFO:werkzeug:194.87.46.228 - - [20/Oct/2024 15:20:26] "POST /send-data HTTP/1.1" 200 -
+INFO:__main__:recipientAddress: 0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab
+INFO:__main__:image: /file/image_link_2
+INFO:__main__:text: NFT #2
+INFO:__main__:tags: ['tag3', 'tag4']
+INFO:__main__:hash_from_backend: 305d06233746875f7c6d42ed10ccb9a794a90cc46b56f7df41e4076a4ba08d7c
+INFO:__main__:Передача данных в контракт: {'recipientAddress': '0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab', 'image': '/file/image_link_2', 'text': 'NFT #2', 'tags': ['tag3', 'tag4'], 'reason': 'No reason', 'previousTokenId': 0, 'isApproveNFT': False, 'hash_from_backend': '305d06233746875f7c6d42ed10ccb9a794a90cc46b56f7df41e4076a4ba08d7c'}
+INFO:__main__:Транзакция успешна с хэшем: c9a520296fca97684c1a5bb4820718c28f1b5bce1b3b6af74863fc50beee581c
+INFO:werkzeug:194.87.46.228 - - [20/Oct/2024 15:20:27] "POST /send-data HTTP/1.1" 200 -
+INFO:__main__:recipientAddress: 0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab
+INFO:__main__:image: /file/image_link_3
+INFO:__main__:text: NFT #3
+INFO:__main__:tags: ['tag5', 'tag6']
+INFO:__main__:hash_from_backend: 570fc7be9ad0bf9debaf0496e90db3784cf415368923a7aab8df4118880b72f8
+INFO:__main__:Передача данных в контракт: {'recipientAddress': '0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab', 'image': '/file/image_link_3', 'text': 'NFT #3', 'tags': ['tag5', 'tag6'], 'reason': 'No reason', 'previousTokenId': 0, 'isApproveNFT': False, 'hash_from_backend': '570fc7be9ad0bf9debaf0496e90db3784cf415368923a7aab8df4118880b72f8'}
+INFO:__main__:Транзакция успешна с хэшем: 94b6ed28f2646b1639e808ebdb1baa7b83222c12c7d9dc7aa772e5a75ac5b8d6
+INFO:werkzeug:194.87.46.228 - - [20/Oct/2024 15:20:28] "POST /send-data HTTP/1.1" 200 -
+INFO:__main__:recipientAddress: 0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab
+INFO:__main__:image: /file/image_link_2
+INFO:__main__:text: NFT #2
+INFO:__main__:tags: ['tag3', 'tag4']
+INFO:__main__:hash_from_backend: 305d06233746875f7c6d42ed10ccb9a794a90cc46b56f7df41e4076a4ba08d7c
+INFO:__main__:Передача данных в контракт: {'recipientAddress': '0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab', 'image': '/file/image_link_2', 'text': 'NFT #2', 'tags': ['tag3', 'tag4'], 'reason': 'No reason', 'previousTokenId': 0, 'isApproveNFT': False, 'hash_from_backend': '305d06233746875f7c6d42ed10ccb9a794a90cc46b56f7df41e4076a4ba08d7c'}
+ERROR:web3.manager.RequestManager:An RPC error was returned by the node. Check the message provided in the error and any available logs for more information.
+ERROR:__main__:Ошибка при отправке данных в смарт-контракт: {'code': -32000, 'message': 'nonce too low: address 0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab, tx: 235 state: 236'}
+INFO:werkzeug:194.87.46.228 - - [20/Oct/2024 15:20:28] "[35m[1mPOST /send-data HTTP/1.1[0m" 500 -
+[2024-10-20 15:35:01 +0000] [185504] [INFO] Starting gunicorn 23.0.0
+[2024-10-20 15:35:01 +0000] [185504] [INFO] Listening at: http://0.0.0.0:5001 (185504)
+[2024-10-20 15:35:01 +0000] [185504] [INFO] Using worker: sync
+[2024-10-20 15:35:01 +0000] [185622] [INFO] Booting worker with pid: 185622
+[2024-10-20 15:35:11 +0000] [185700] [INFO] Starting gunicorn 23.0.0
+[2024-10-20 15:35:11 +0000] [185700] [ERROR] Connection in use: ('0.0.0.0', 5001)
+[2024-10-20 15:35:11 +0000] [185700] [ERROR] connection to ('0.0.0.0', 5001) failed: [Errno 98] Address already in use
+[2024-10-20 15:35:12 +0000] [185700] [ERROR] Connection in use: ('0.0.0.0', 5001)
+[2024-10-20 15:35:12 +0000] [185700] [ERROR] connection to ('0.0.0.0', 5001) failed: [Errno 98] Address already in use
+[2024-10-20 15:35:13 +0000] [185700] [ERROR] Connection in use: ('0.0.0.0', 5001)
+[2024-10-20 15:35:13 +0000] [185700] [ERROR] connection to ('0.0.0.0', 5001) failed: [Errno 98] Address already in use
+[2024-10-20 15:35:14 +0000] [185700] [ERROR] Connection in use: ('0.0.0.0', 5001)
+[2024-10-20 15:35:14 +0000] [185700] [ERROR] connection to ('0.0.0.0', 5001) failed: [Errno 98] Address already in use
+[2024-10-20 15:35:15 +0000] [185700] [ERROR] Connection in use: ('0.0.0.0', 5001)
+[2024-10-20 15:35:15 +0000] [185700] [ERROR] connection to ('0.0.0.0', 5001) failed: [Errno 98] Address already in use
+[2024-10-20 15:35:16 +0000] [185700] [ERROR] Can't connect to ('0.0.0.0', 5001)
+INFO:__main__:Getting valid NFTs for user: 0xYourAddressHere
+INFO:__main__:Getting valid NFTs for user: 0xYourAddressHere
+INFO:__main__:Valid NFTs found: []
+INFO:werkzeug:80.85.247.104 - - [20/Oct/2024 15:36:47] "GET /get-valid-nfts?userAddress=0xYourAddressHere HTTP/1.1" 200 -
+INFO:__main__:Valid NFTs found: []
+INFO:werkzeug:80.85.247.104 - - [20/Oct/2024 15:36:50] "GET /get-valid-nfts?userAddress=0xYourAddressHere HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/var/www/MoreTech2024NFT/backend/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:__main__:Connected to Arbitrum Testnet
+INFO:__main__:Минтинг NFT для 0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab с параметрами: {'recipientAddress': '0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab', 'image': 'image_url_1', 'text': 'Sample text for NFT 1', 'tags': ['tag1', 'tag2'], 'isApproveNFT': True, 'reason': 'Award for performance', 'previousTokenId': 0, 'hash_from_backend': 'hash_value_1'}
+INFO:__main__:recipientAddress: 0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab
+INFO:__main__:image: image_url_1
+INFO:__main__:text: Sample text for NFT 1
+INFO:__main__:tags: ['tag1', 'tag2']
+INFO:__main__:hash_from_backend: hash_value_1
+INFO:__main__:Передача данных в контракт: {'recipientAddress': '0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab', 'image': 'image_url_1', 'text': 'Sample text for NFT 1', 'tags': ['tag1', 'tag2'], 'isApproveNFT': True, 'reason': 'Award for performance', 'previousTokenId': 0, 'hash_from_backend': 'hash_value_1'}
+INFO:__main__:Транзакция успешна с хэшем: a3e24debb92efae8ee4907acdf075881a0b74f7a1a8cf8d1f971c63fa27caed0
+INFO:__main__:NFT для 0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab успешно создан с транзакцией a3e24debb92efae8ee4907acdf075881a0b74f7a1a8cf8d1f971c63fa27caed0
+INFO:__main__:Минтинг NFT для 0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab с параметрами: {'recipientAddress': '0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab', 'image': 'image_url_2', 'text': 'Sample text for NFT 2', 'tags': ['tag3', 'tag4'], 'isApproveNFT': True, 'reason': 'Award for project completion', 'previousTokenId': 1, 'hash_from_backend': 'hash_value_2'}
+INFO:__main__:recipientAddress: 0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab
+INFO:__main__:image: image_url_2
+INFO:__main__:text: Sample text for NFT 2
+INFO:__main__:tags: ['tag3', 'tag4']
+INFO:__main__:hash_from_backend: hash_value_2
+INFO:__main__:Передача данных в контракт: {'recipientAddress': '0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab', 'image': 'image_url_2', 'text': 'Sample text for NFT 2', 'tags': ['tag3', 'tag4'], 'isApproveNFT': True, 'reason': 'Award for project completion', 'previousTokenId': 1, 'hash_from_backend': 'hash_value_2'}
+INFO:__main__:Транзакция успешна с хэшем: b6a94b5bff345bbaa5fad205157aaa29775df7574470e09dfe762a42c27594d2
+INFO:__main__:NFT для 0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab успешно создан с транзакцией b6a94b5bff345bbaa5fad205157aaa29775df7574470e09dfe762a42c27594d2
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 465-234-999
+[2024-10-20 15:48:35 +0000] [185504] [INFO] Handling signal: term
+[2024-10-20 15:48:35 +0000] [185622] [INFO] Worker exiting (pid: 185622)
+[2024-10-20 15:48:36 +0000] [185504] [INFO] Shutting down: Master
+[2024-10-20 15:49:03 +0000] [186558] [INFO] Starting gunicorn 23.0.0
+[2024-10-20 15:49:03 +0000] [186558] [INFO] Listening at: http://0.0.0.0:5001 (186558)
+[2024-10-20 15:49:03 +0000] [186558] [INFO] Using worker: sync
+[2024-10-20 15:49:03 +0000] [186673] [INFO] Booting worker with pid: 186673
+INFO:__main__:Getting valid NFTs for user: 0xYourAddressHere
+INFO:__main__:Valid NFTs found: []
+INFO:werkzeug:80.85.247.104 - - [20/Oct/2024 15:51:43] "GET /get-valid-nfts?userAddress=0xYourAddressHere HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/var/www/MoreTech2024NFT/backend/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:__main__:Connected to Arbitrum Testnet
+INFO:__main__:Минтинг NFT для 0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab с параметрами: {'recipientAddress': '0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab', 'image': 'image_url_1', 'text': 'Sample text for NFT 1', 'tags': ['tag1', 'tag2'], 'isApproveNFT': True, 'reason': 'Award for performance', 'previousTokenId': 0, 'hash_from_backend': 'hash_value_1'}
+INFO:__main__:recipientAddress: 0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab
+INFO:__main__:image: image_url_1
+INFO:__main__:text: Sample text for NFT 1
+INFO:__main__:tags: ['tag1', 'tag2']
+INFO:__main__:hash_from_backend: hash_value_1
+INFO:__main__:Передача данных в контракт: {'recipientAddress': '0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab', 'image': 'image_url_1', 'text': 'Sample text for NFT 1', 'tags': ['tag1', 'tag2'], 'isApproveNFT': True, 'reason': 'Award for performance', 'previousTokenId': 0, 'hash_from_backend': 'hash_value_1'}
+INFO:__main__:Транзакция успешна с хэшем: 1f52738e919eac33cc8e150f3c0cff0b6ad4cb2c2e4784d5d4c213fbdda70467
+INFO:__main__:NFT для 0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab успешно создан с транзакцией 1f52738e919eac33cc8e150f3c0cff0b6ad4cb2c2e4784d5d4c213fbdda70467
+INFO:__main__:Минтинг NFT для 0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab с параметрами: {'recipientAddress': '0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab', 'image': 'image_url_2', 'text': 'Sample text for NFT 2', 'tags': ['tag3', 'tag4'], 'isApproveNFT': True, 'reason': 'Award for project completion', 'previousTokenId': 1, 'hash_from_backend': 'hash_value_2'}
+INFO:__main__:recipientAddress: 0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab
+INFO:__main__:image: image_url_2
+INFO:__main__:text: Sample text for NFT 2
+INFO:__main__:tags: ['tag3', 'tag4']
+INFO:__main__:hash_from_backend: hash_value_2
+INFO:__main__:Передача данных в контракт: {'recipientAddress': '0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab', 'image': 'image_url_2', 'text': 'Sample text for NFT 2', 'tags': ['tag3', 'tag4'], 'isApproveNFT': True, 'reason': 'Award for project completion', 'previousTokenId': 1, 'hash_from_backend': 'hash_value_2'}
+INFO:__main__:Транзакция успешна с хэшем: b94d4b72eb57c0d420c2c3f83b377d21ba2bd45ce719f15eea2b1827d7d217bb
+INFO:__main__:NFT для 0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab успешно создан с транзакцией b94d4b72eb57c0d420c2c3f83b377d21ba2bd45ce719f15eea2b1827d7d217bb
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 465-234-999
+ERROR:werkzeug:179.60.147.13 - - [20/Oct/2024 16:44:38] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+INFO:werkzeug:179.60.147.13 - - [20/Oct/2024 16:44:38] "[35m[1m\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr[0m" HTTPStatus.BAD_REQUEST -
+Traceback (most recent call last):
+  File "/var/www/MoreTech2024NFT/backend/app.py", line 374, in <module>
+    send_data_for_backend(nft_data)
+TypeError: send_data_for_backend() takes 0 positional arguments but 1 was given
+[2024-10-20 17:01:12 +0000] [189915] [INFO] Starting gunicorn 23.0.0
+[2024-10-20 17:01:12 +0000] [189915] [ERROR] Connection in use: ('0.0.0.0', 5001)
+[2024-10-20 17:01:12 +0000] [189915] [ERROR] connection to ('0.0.0.0', 5001) failed: [Errno 98] Address already in use
+[2024-10-20 17:01:13 +0000] [189915] [ERROR] Connection in use: ('0.0.0.0', 5001)
+[2024-10-20 17:01:13 +0000] [189915] [ERROR] connection to ('0.0.0.0', 5001) failed: [Errno 98] Address already in use
+[2024-10-20 17:01:14 +0000] [189915] [ERROR] Connection in use: ('0.0.0.0', 5001)
+[2024-10-20 17:01:14 +0000] [189915] [ERROR] connection to ('0.0.0.0', 5001) failed: [Errno 98] Address already in use
+[2024-10-20 17:01:15 +0000] [189915] [ERROR] Connection in use: ('0.0.0.0', 5001)
+[2024-10-20 17:01:15 +0000] [189915] [ERROR] connection to ('0.0.0.0', 5001) failed: [Errno 98] Address already in use
+[2024-10-20 17:01:16 +0000] [189915] [ERROR] Connection in use: ('0.0.0.0', 5001)
+[2024-10-20 17:01:16 +0000] [189915] [ERROR] connection to ('0.0.0.0', 5001) failed: [Errno 98] Address already in use
+[2024-10-20 17:01:17 +0000] [189915] [ERROR] Can't connect to ('0.0.0.0', 5001)
+INFO:__main__:Connected to Arbitrum Testnet
+INFO:__main__:Минтинг NFT для 0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab с параметрами: {'recipientAddress': '0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab', 'image': 'image_url_1', 'text': 'Sample text for NFT 1', 'tags': ['tag1', 'tag2'], 'isApproveNFT': True, 'reason': 'Award for performance', 'previousTokenId': 0, 'hash_from_backend': 'hash_value_1'}
+INFO:__main__:recipientAddress: 0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab
+INFO:__main__:image: image_url_1
+INFO:__main__:text: Sample text for NFT 1
+INFO:__main__:tags: ['tag1', 'tag2']
+INFO:__main__:hash_from_backend: hash_value_1
+INFO:__main__:Передача данных в контракт: {'recipientAddress': '0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab', 'image': 'image_url_1', 'text': 'Sample text for NFT 1', 'tags': ['tag1', 'tag2'], 'isApproveNFT': True, 'reason': 'Award for performance', 'previousTokenId': 0, 'hash_from_backend': 'hash_value_1'}
+INFO:__main__:Транзакция успешна с хэшем: 7f157f38caa13cf91429068261bdfc2f1bc22376dff48fcf38f3bb7cf6feb623
+INFO:__main__:NFT для 0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab успешно создан с транзакцией 7f157f38caa13cf91429068261bdfc2f1bc22376dff48fcf38f3bb7cf6feb623
+INFO:__main__:Минтинг NFT для 0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab с параметрами: {'recipientAddress': '0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab', 'image': 'image_url_2', 'text': 'Sample text for NFT 2', 'tags': ['tag3', 'tag4'], 'isApproveNFT': True, 'reason': 'Award for project completion', 'previousTokenId': 1, 'hash_from_backend': 'hash_value_2'}
+INFO:__main__:recipientAddress: 0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab
+INFO:__main__:image: image_url_2
+INFO:__main__:text: Sample text for NFT 2
+INFO:__main__:tags: ['tag3', 'tag4']
+INFO:__main__:hash_from_backend: hash_value_2
+INFO:__main__:Передача данных в контракт: {'recipientAddress': '0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab', 'image': 'image_url_2', 'text': 'Sample text for NFT 2', 'tags': ['tag3', 'tag4'], 'isApproveNFT': True, 'reason': 'Award for project completion', 'previousTokenId': 1, 'hash_from_backend': 'hash_value_2'}
+INFO:__main__:Транзакция успешна с хэшем: 081922d040505a178956a1c821bf7040fca08107e6fc161837d41b75966ca0c7
+INFO:__main__:NFT для 0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab успешно создан с транзакцией 081922d040505a178956a1c821bf7040fca08107e6fc161837d41b75966ca0c7
+ * Serving Flask app 'backend_1'
+ * Debug mode: on
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://194.87.46.228:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:__main__:Connected to Arbitrum Testnet
+INFO:__main__:Минтинг NFT для 0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab с параметрами: {'recipientAddress': '0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab', 'image': 'image_url_1', 'text': 'Sample text for NFT 1', 'tags': ['tag1', 'tag2'], 'isApproveNFT': True, 'reason': 'Award for performance', 'previousTokenId': 0, 'hash_from_backend': 'hash_value_1'}
+INFO:__main__:recipientAddress: 0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab
+INFO:__main__:image: image_url_1
+INFO:__main__:text: Sample text for NFT 1
+INFO:__main__:tags: ['tag1', 'tag2']
+INFO:__main__:hash_from_backend: hash_value_1
+INFO:__main__:Передача данных в контракт: {'recipientAddress': '0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab', 'image': 'image_url_1', 'text': 'Sample text for NFT 1', 'tags': ['tag1', 'tag2'], 'isApproveNFT': True, 'reason': 'Award for performance', 'previousTokenId': 0, 'hash_from_backend': 'hash_value_1'}
+INFO:__main__:Транзакция успешна с хэшем: 0e2feb92ee70b6c417ea7b4880307880cc4ed8cc00403c6cfb89b733d991b1d6
+INFO:__main__:NFT для 0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab успешно создан с транзакцией 0e2feb92ee70b6c417ea7b4880307880cc4ed8cc00403c6cfb89b733d991b1d6
+INFO:__main__:Минтинг NFT для 0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab с параметрами: {'recipientAddress': '0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab', 'image': 'image_url_2', 'text': 'Sample text for NFT 2', 'tags': ['tag3', 'tag4'], 'isApproveNFT': True, 'reason': 'Award for project completion', 'previousTokenId': 1, 'hash_from_backend': 'hash_value_2'}
+INFO:__main__:recipientAddress: 0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab
+INFO:__main__:image: image_url_2
+INFO:__main__:text: Sample text for NFT 2
+INFO:__main__:tags: ['tag3', 'tag4']
+INFO:__main__:hash_from_backend: hash_value_2
+INFO:__main__:Передача данных в контракт: {'recipientAddress': '0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab', 'image': 'image_url_2', 'text': 'Sample text for NFT 2', 'tags': ['tag3', 'tag4'], 'isApproveNFT': True, 'reason': 'Award for project completion', 'previousTokenId': 1, 'hash_from_backend': 'hash_value_2'}
+ERROR:web3.manager.RequestManager:An RPC error was returned by the node. Check the message provided in the error and any available logs for more information.
+ERROR:__main__:Ошибка при отправке данных в смарт-контракт: {'code': -32000, 'message': 'nonce too low: address 0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab, tx: 242 state: 243'}
+ERROR:__main__:Ошибка при создании NFT для 0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 465-234-999
+[2024-10-20 17:09:58 +0000] [186558] [INFO] Handling signal: term
+[2024-10-20 17:09:58 +0000] [186673] [INFO] Worker exiting (pid: 186673)
+[2024-10-20 17:10:00 +0000] [186558] [INFO] Shutting down: Master
+[2024-10-20 17:10:05 +0000] [190871] [INFO] Starting gunicorn 23.0.0
+[2024-10-20 17:10:05 +0000] [190871] [INFO] Listening at: http://0.0.0.0:5001 (190871)
+[2024-10-20 17:10:05 +0000] [190871] [INFO] Using worker: sync
+[2024-10-20 17:10:05 +0000] [190986] [INFO] Booting worker with pid: 190986
+INFO:werkzeug: * Detected change in '/var/www/MoreTech2024NFT/backend/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:__main__:Connected to Arbitrum Testnet
+INFO:__main__:Минтинг NFT для 0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab с параметрами: {'recipientAddress': '0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab', 'image': 'image_url_1', 'text': 'Sample text for NFT 1', 'tags': ['tag1', 'tag2'], 'isApproveNFT': True, 'reason': 'Award for performance', 'previousTokenId': 0, 'hash_from_backend': 'hash_value_1'}
+INFO:__main__:recipientAddress: 0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab
+INFO:__main__:image: image_url_1
+INFO:__main__:text: Sample text for NFT 1
+INFO:__main__:tags: ['tag1', 'tag2']
+INFO:__main__:hash_from_backend: hash_value_1
+INFO:__main__:Передача данных в контракт: {'recipientAddress': '0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab', 'image': 'image_url_1', 'text': 'Sample text for NFT 1', 'tags': ['tag1', 'tag2'], 'isApproveNFT': True, 'reason': 'Award for performance', 'previousTokenId': 0, 'hash_from_backend': 'hash_value_1'}
+INFO:__main__:Транзакция успешна с хэшем: 2f1e9de5bd44aa90ffbdac352f5aa88eef8c39901a798661f05a655aba1e173e
+INFO:__main__:NFT для 0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab успешно создан с транзакцией 2f1e9de5bd44aa90ffbdac352f5aa88eef8c39901a798661f05a655aba1e173e
+INFO:__main__:Минтинг NFT для 0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab с параметрами: {'recipientAddress': '0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab', 'image': 'image_url_2', 'text': 'Sample text for NFT 2', 'tags': ['tag3', 'tag4'], 'isApproveNFT': True, 'reason': 'Award for project completion', 'previousTokenId': 1, 'hash_from_backend': 'hash_value_2'}
+INFO:__main__:recipientAddress: 0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab
+INFO:__main__:image: image_url_2
+INFO:__main__:text: Sample text for NFT 2
+INFO:__main__:tags: ['tag3', 'tag4']
+INFO:__main__:hash_from_backend: hash_value_2
+INFO:__main__:Передача данных в контракт: {'recipientAddress': '0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab', 'image': 'image_url_2', 'text': 'Sample text for NFT 2', 'tags': ['tag3', 'tag4'], 'isApproveNFT': True, 'reason': 'Award for project completion', 'previousTokenId': 1, 'hash_from_backend': 'hash_value_2'}
+INFO:__main__:Транзакция успешна с хэшем: 0bb8914ee62da4ffb9191dc48bc49ec7c341407e346d52a590f097853acb6b31
+INFO:__main__:NFT для 0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab успешно создан с транзакцией 0bb8914ee62da4ffb9191dc48bc49ec7c341407e346d52a590f097853acb6b31
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 465-234-999
+[2024-10-20 17:49:11 +0000] [190871] [INFO] Handling signal: term
+[2024-10-20 17:49:11 +0000] [190986] [INFO] Worker exiting (pid: 190986)
+[2024-10-20 17:49:13 +0000] [190871] [INFO] Shutting down: Master
+[2024-10-20 17:49:33 +0000] [192074] [INFO] Starting gunicorn 23.0.0
+[2024-10-20 17:49:33 +0000] [192074] [INFO] Listening at: http://0.0.0.0:5001 (192074)
+[2024-10-20 17:49:33 +0000] [192074] [INFO] Using worker: sync
+[2024-10-20 17:49:33 +0000] [192189] [INFO] Booting worker with pid: 192189
+INFO:werkzeug: * Detected change in '/var/www/MoreTech2024NFT/backend/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:__main__:Connected to Arbitrum Testnet
+INFO:__main__:Минтинг NFT для 0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab с параметрами: {'recipientAddress': '0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab', 'image': 'image_url_1', 'text': 'Sample text for NFT 1', 'tags': ['tag1', 'tag2'], 'isApproveNFT': True, 'reason': 'Award for performance', 'previousTokenId': 0, 'hash_from_backend': 'hash_value_1'}
+INFO:__main__:recipientAddress: 0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab
+INFO:__main__:image: image_url_1
+INFO:__main__:text: Sample text for NFT 1
+INFO:__main__:tags: ['tag1', 'tag2']
+INFO:__main__:hash_from_backend: hash_value_1
+INFO:__main__:Передача данных в контракт: {'recipientAddress': '0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab', 'image': 'image_url_1', 'text': 'Sample text for NFT 1', 'tags': ['tag1', 'tag2'], 'isApproveNFT': True, 'reason': 'Award for performance', 'previousTokenId': 0, 'hash_from_backend': 'hash_value_1'}
+INFO:__main__:Транзакция успешна с хэшем: ba39200b00e2ee6dc55c21da36ca060f07a008d87f7a8ad2d8a80221e9eb0f7f
+INFO:__main__:NFT для 0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab успешно создан с транзакцией ba39200b00e2ee6dc55c21da36ca060f07a008d87f7a8ad2d8a80221e9eb0f7f
+INFO:__main__:Минтинг NFT для 0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab с параметрами: {'recipientAddress': '0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab', 'image': 'image_url_2', 'text': 'Sample text for NFT 2', 'tags': ['tag3', 'tag4'], 'isApproveNFT': True, 'reason': 'Award for project completion', 'previousTokenId': 1, 'hash_from_backend': 'hash_value_2'}
+INFO:__main__:recipientAddress: 0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab
+INFO:__main__:image: image_url_2
+INFO:__main__:text: Sample text for NFT 2
+INFO:__main__:tags: ['tag3', 'tag4']
+INFO:__main__:hash_from_backend: hash_value_2
+INFO:__main__:Передача данных в контракт: {'recipientAddress': '0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab', 'image': 'image_url_2', 'text': 'Sample text for NFT 2', 'tags': ['tag3', 'tag4'], 'isApproveNFT': True, 'reason': 'Award for project completion', 'previousTokenId': 1, 'hash_from_backend': 'hash_value_2'}
+INFO:__main__:Транзакция успешна с хэшем: 85dd55526b792c8fbfe2fc0f423eea09632c6f67eb2eca98002f85a1d7e9bb50
+INFO:__main__:NFT для 0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab успешно создан с транзакцией 85dd55526b792c8fbfe2fc0f423eea09632c6f67eb2eca98002f85a1d7e9bb50
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 465-234-999
+[2024-10-20 18:25:52 +0000] [192189] [INFO] Worker exiting (pid: 192189)
+[2024-10-20 18:25:53 +0000] [192074] [INFO] Handling signal: term
+[2024-10-20 18:25:53 +0000] [192074] [ERROR] Worker (pid:192189) was sent SIGTERM!
+[2024-10-20 18:25:53 +0000] [192074] [INFO] Shutting down: Master
+[2024-10-20 18:25:56 +0000] [194262] [INFO] Starting gunicorn 23.0.0
+[2024-10-20 18:25:56 +0000] [194262] [INFO] Listening at: http://0.0.0.0:5001 (194262)
+[2024-10-20 18:25:56 +0000] [194262] [INFO] Using worker: sync
+[2024-10-20 18:25:56 +0000] [194377] [INFO] Booting worker with pid: 194377
+[2024-10-20 18:25:56 +0000] [194377] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+    worker.init_process()
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/gunicorn/workers/base.py", line 135, in init_process
+    self.load_wsgi()
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+    return self.load_wsgiapp()
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/gunicorn/util.py", line 370, in import_app
+    mod = importlib.import_module(module)
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/var/www/MoreTech2024NFT/backend/app.py", line 11, in <module>
+    from flask_cors import CORS
+ModuleNotFoundError: No module named 'flask_cors'
+[2024-10-20 18:25:56 +0000] [194377] [INFO] Worker exiting (pid: 194377)
+[2024-10-20 18:25:56 +0000] [194262] [ERROR] Worker (pid:194377) exited with code 3
+[2024-10-20 18:25:56 +0000] [194262] [ERROR] Shutting down: Master
+[2024-10-20 18:25:56 +0000] [194262] [ERROR] Reason: Worker failed to boot.
+[2024-10-20 18:26:44 +0000] [194587] [INFO] Starting gunicorn 23.0.0
+[2024-10-20 18:26:44 +0000] [194587] [INFO] Listening at: http://0.0.0.0:5001 (194587)
+[2024-10-20 18:26:44 +0000] [194587] [INFO] Using worker: sync
+[2024-10-20 18:26:44 +0000] [194702] [INFO] Booting worker with pid: 194702
+[2024-10-20 18:26:44 +0000] [194702] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/gunicorn/arbiter.py", line 608, in spawn_worker
+    worker.init_process()
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/gunicorn/workers/base.py", line 135, in init_process
+    self.load_wsgi()
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/gunicorn/app/base.py", line 66, in wsgi
+    self.callable = self.load()
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+    return self.load_wsgiapp()
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/gunicorn/util.py", line 370, in import_app
+    mod = importlib.import_module(module)
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/var/www/MoreTech2024NFT/backend/app.py", line 11, in <module>
+    from flask_cors import CORS
+ModuleNotFoundError: No module named 'flask_cors'
+[2024-10-20 18:26:44 +0000] [194702] [INFO] Worker exiting (pid: 194702)
+[2024-10-20 18:26:45 +0000] [194587] [ERROR] Worker (pid:194702) exited with code 3
+[2024-10-20 18:26:45 +0000] [194587] [ERROR] Shutting down: Master
+[2024-10-20 18:26:45 +0000] [194587] [ERROR] Reason: Worker failed to boot.
+INFO:werkzeug: * Detected change in '/var/www/MoreTech2024NFT/backend/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:__main__:Connected to Arbitrum Testnet
+INFO:__main__:Минтинг NFT для 0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab с параметрами: {'recipientAddress': '0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab', 'image': 'image_url_1', 'text': 'Sample text for NFT 1', 'tags': ['tag1', 'tag2'], 'isApproveNFT': True, 'reason': 'Award for performance', 'previousTokenId': 0, 'hash_from_backend': 'hash_value_1'}
+INFO:__main__:recipientAddress: 0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab
+INFO:__main__:image: image_url_1
+INFO:__main__:text: Sample text for NFT 1
+INFO:__main__:tags: ['tag1', 'tag2']
+INFO:__main__:hash_from_backend: hash_value_1
+INFO:__main__:Передача данных в контракт: {'recipientAddress': '0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab', 'image': 'image_url_1', 'text': 'Sample text for NFT 1', 'tags': ['tag1', 'tag2'], 'isApproveNFT': True, 'reason': 'Award for performance', 'previousTokenId': 0, 'hash_from_backend': 'hash_value_1'}
+INFO:__main__:Транзакция успешна с хэшем: 9cf3a4a37617c04ba1fadbc6892a62564b1cff83a25850196fcfda7cb39f786f
+INFO:__main__:NFT для 0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab успешно создан с транзакцией 9cf3a4a37617c04ba1fadbc6892a62564b1cff83a25850196fcfda7cb39f786f
+INFO:__main__:Минтинг NFT для 0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab с параметрами: {'recipientAddress': '0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab', 'image': 'image_url_2', 'text': 'Sample text for NFT 2', 'tags': ['tag3', 'tag4'], 'isApproveNFT': True, 'reason': 'Award for project completion', 'previousTokenId': 1, 'hash_from_backend': 'hash_value_2'}
+INFO:__main__:recipientAddress: 0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab
+INFO:__main__:image: image_url_2
+INFO:__main__:text: Sample text for NFT 2
+INFO:__main__:tags: ['tag3', 'tag4']
+INFO:__main__:hash_from_backend: hash_value_2
+INFO:__main__:Передача данных в контракт: {'recipientAddress': '0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab', 'image': 'image_url_2', 'text': 'Sample text for NFT 2', 'tags': ['tag3', 'tag4'], 'isApproveNFT': True, 'reason': 'Award for project completion', 'previousTokenId': 1, 'hash_from_backend': 'hash_value_2'}
+INFO:__main__:Транзакция успешна с хэшем: 2503d6bee9e2ac6f2dd3507ce3e0eb410a233d983295faaa7f45cdcec86aa0d3
+INFO:__main__:NFT для 0x7D4fCE1D01D00baBF24D3a4379D5A7fDCAB77Eab успешно создан с транзакцией 2503d6bee9e2ac6f2dd3507ce3e0eb410a233d983295faaa7f45cdcec86aa0d3
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 465-234-999
+[2024-10-20 18:28:20 +0000] [195118] [INFO] Starting gunicorn 23.0.0
+[2024-10-20 18:28:20 +0000] [195118] [INFO] Listening at: http://0.0.0.0:5001 (195118)
+[2024-10-20 18:28:20 +0000] [195118] [INFO] Using worker: sync
+[2024-10-20 18:28:20 +0000] [195233] [INFO] Booting worker with pid: 195233
+ERROR:app:Exception on /get_nft_chains [POST]
+Traceback (most recent call last):
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/var/www/MoreTech2024NFT/backend/app.py", line 323, in get_nft_chains
+    nft_chains = get_valid_nfts(user_eth_address)
+TypeError: get_valid_nfts() takes 0 positional arguments but 1 was given
+ERROR:app:Exception on /get_actual_valid_nfts [POST]
+Traceback (most recent call last):
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/var/www/MoreTech2024NFT/backend/app.py", line 307, in get_actual_valid_nfts
+    user_eth_address = data.get('user_eth_address')
+AttributeError: 'list' object has no attribute 'get'
+ERROR:app:Exception on /get_actual_valid_nfts [POST]
+Traceback (most recent call last):
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/var/www/MoreTech2024NFT/backend/app.py", line 307, in get_actual_valid_nfts
+    user_eth_address = data.get('user_eth_address')
+AttributeError: 'list' object has no attribute 'get'
+ERROR:app:Exception on /send_data_for_backend [POST]
+Traceback (most recent call last):
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/var/www/MoreTech2024NFT/backend/app.py", line 337, in send_data_for_backend
+    send_data_for_backend(data)
+TypeError: send_data_for_backend() takes 0 positional arguments but 1 was given
+ERROR:app:Exception on /get_actual_valid_nfts [POST]
+Traceback (most recent call last):
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/var/www/MoreTech2024NFT/backend/app.py", line 307, in get_actual_valid_nfts
+    user_eth_address = data.get('user_eth_address')
+AttributeError: 'list' object has no attribute 'get'
+INFO:werkzeug:92.118.39.209 - - [20/Oct/2024 18:32:13] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:92.118.39.209 - - [20/Oct/2024 18:32:14] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+ERROR:app:Exception on /get_nft_chains [POST]
+Traceback (most recent call last):
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/var/www/MoreTech2024NFT/backend/app.py", line 323, in get_nft_chains
+    nft_chains = get_valid_nfts(user_eth_address)
+TypeError: get_valid_nfts() takes 0 positional arguments but 1 was given
+INFO:werkzeug:198.235.24.178 - - [20/Oct/2024 22:41:48] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:205.210.31.97 - - [21/Oct/2024 00:50:14] "GET / HTTP/1.0" 200 -
+[2024-10-21 01:04:56 +0000] [195118] [CRITICAL] WORKER TIMEOUT (pid:195233)
+[2024-10-21 01:04:57 +0000] [195233] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/gunicorn/http/message.py", line 274, in parse
+    line, rbuf = self.read_line(unreader, buf, self.limit_request_line)
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/gunicorn/http/message.py", line 326, in read_line
+    self.get_data(unreader, buf)
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2024-10-21 01:04:57 +0000] [195233] [INFO] Worker exiting (pid: 195233)
+[2024-10-21 01:04:58 +0000] [195118] [ERROR] Worker (pid:195233) was sent SIGKILL! Perhaps out of memory?
+[2024-10-21 01:04:58 +0000] [201447] [INFO] Booting worker with pid: 201447
+ERROR:werkzeug:167.94.146.59 - - [21/Oct/2024 03:23:24] code 400, message Bad request version ('À\x14À')
+INFO:werkzeug:167.94.146.59 - - [21/Oct/2024 03:23:24] "[35m[1m\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03Wd\x89À\x00ºË\x9c­°I«cÀ^\x12¹i0\x11Ø(Îryé£a\x0eà.\x88 guÆ\x98ÁRd\x9f¯~\x0b±ø\x11O"9F99c ´\x1f¤@\x00úÞ3& \x00&Ì¨Ì©À/À0À+À,À\x13À\x09À\x14À[0m" HTTPStatus.BAD_REQUEST -
+INFO:werkzeug:167.94.146.59 - - [21/Oct/2024 03:23:27] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:167.94.146.59 - - [21/Oct/2024 03:23:32] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:167.94.146.59 - - [21/Oct/2024 03:23:32] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+ERROR:werkzeug:167.94.146.59 - - [21/Oct/2024 03:23:32] code 505, message Invalid HTTP version (2.0)
+INFO:werkzeug:167.94.146.59 - - [21/Oct/2024 03:23:32] "[35m[1mPRI * HTTP/2.0[0m" HTTPStatus.HTTP_VERSION_NOT_SUPPORTED -
+ERROR:werkzeug:167.94.138.37 - - [21/Oct/2024 05:50:49] code 400, message Bad request version ('À\x14À')
+INFO:werkzeug:167.94.138.37 - - [21/Oct/2024 05:50:49] "[35m[1m\x16\x03\x01\x00î\x01\x00\x00ê\x03\x037¼\x9aN\x01\x0d\x9f!\x96Ó\x9d)>á\x9bW×½6¶¦{8\x00Yj\x9dÕÒ<^ð É\x1a\x8b\x9feTÜ\x0bË\x1b\x9b^\x1cèÐU\x87Åÿkå\x8f\x93À\x01$#ÇàÌh·\x00&Ì¨Ì©À/À0À+À,À\x13À\x09À\x14À[0m" HTTPStatus.BAD_REQUEST -
+INFO:werkzeug:167.94.138.37 - - [21/Oct/2024 05:50:53] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:167.94.138.37 - - [21/Oct/2024 05:50:57] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:167.94.138.37 - - [21/Oct/2024 05:50:57] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+ERROR:werkzeug:167.94.138.37 - - [21/Oct/2024 05:50:57] code 505, message Invalid HTTP version (2.0)
+INFO:werkzeug:167.94.138.37 - - [21/Oct/2024 05:50:57] "[35m[1mPRI * HTTP/2.0[0m" HTTPStatus.HTTP_VERSION_NOT_SUPPORTED -
+INFO:werkzeug:65.49.1.49 - - [21/Oct/2024 06:37:14] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:65.49.1.41 - - [21/Oct/2024 06:37:32] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+ERROR:app:Exception on /get_nft_chains [POST]
+Traceback (most recent call last):
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/var/www/MoreTech2024NFT/backend/app.py", line 323, in get_nft_chains
+    nft_chains = get_valid_nfts(user_eth_address)
+TypeError: get_valid_nfts() takes 0 positional arguments but 1 was given
+ERROR:app:Exception on /send_data_for_backend [POST]
+Traceback (most recent call last):
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/var/www/MoreTech2024NFT/backend/app.py", line 337, in send_data_for_backend
+    send_data_for_backend(data)
+TypeError: send_data_for_backend() takes 0 positional arguments but 1 was given
+ERROR:app:Exception on /send_data_for_backend [POST]
+Traceback (most recent call last):
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/var/www/MoreTech2024NFT/backend/app.py", line 337, in send_data_for_backend
+    send_data_for_backend(data)
+TypeError: send_data_for_backend() takes 0 positional arguments but 1 was given
+ERROR:app:Exception on /get_actual_valid_nfts [POST]
+Traceback (most recent call last):
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/var/www/MoreTech2024NFT/backend/app.py", line 307, in get_actual_valid_nfts
+    user_eth_address = data.get('user_eth_address')
+AttributeError: 'list' object has no attribute 'get'
+ERROR:app:Exception on /get_actual_valid_nfts [POST]
+Traceback (most recent call last):
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/var/www/MoreTech2024NFT/backend/app.py", line 307, in get_actual_valid_nfts
+    user_eth_address = data.get('user_eth_address')
+AttributeError: 'list' object has no attribute 'get'
+ERROR:app:Exception on /get_actual_valid_nfts [POST]
+Traceback (most recent call last):
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/var/www/MoreTech2024NFT/backend/app.py", line 307, in get_actual_valid_nfts
+    user_eth_address = data.get('user_eth_address')
+AttributeError: 'list' object has no attribute 'get'
+ERROR:app:Exception on /send_data_for_backend [POST]
+Traceback (most recent call last):
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/var/www/MoreTech2024NFT/backend/app.py", line 337, in send_data_for_backend
+    send_data_for_backend(data)
+TypeError: send_data_for_backend() takes 0 positional arguments but 1 was given
+ERROR:app:Exception on /send_data_for_backend [POST]
+Traceback (most recent call last):
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/var/www/MoreTech2024NFT/backend/app.py", line 337, in send_data_for_backend
+    send_data_for_backend(data)
+TypeError: send_data_for_backend() takes 0 positional arguments but 1 was given
+ERROR:app:Exception on /send_data_for_backend [POST]
+Traceback (most recent call last):
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/var/www/MoreTech2024NFT/backend/app.py", line 337, in send_data_for_backend
+    send_data_for_backend(data)
+TypeError: send_data_for_backend() takes 0 positional arguments but 1 was given
+ERROR:app:Exception on /send_data_for_backend [POST]
+Traceback (most recent call last):
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/var/www/MoreTech2024NFT/backend/app.py", line 337, in send_data_for_backend
+    send_data_for_backend(data)
+TypeError: send_data_for_backend() takes 0 positional arguments but 1 was given
+ERROR:app:Exception on /send_data_for_backend [POST]
+Traceback (most recent call last):
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/var/www/MoreTech2024NFT/backend/app.py", line 337, in send_data_for_backend
+    send_data_for_backend(data)
+TypeError: send_data_for_backend() takes 0 positional arguments but 1 was given
+ERROR:werkzeug:45.84.89.3 - - [21/Oct/2024 13:36:49] code 400, message Bad request version ('\x00\x04\x03\x00\x01\x02\x00')
+INFO:werkzeug:45.84.89.3 - - [21/Oct/2024 13:36:49] "[35m[1m\x16\x03\x01\x00\x85\x01\x00\x00\x81\x03\x03UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU\x00\x00\x06À0\x00\x9c\x00\x9d\x01\x00\x00R\x00\x0b\x00\x04\x03\x00\x01\x02\x00[0m" HTTPStatus.BAD_REQUEST -
+ERROR:app:Exception on /get_nft_chains [POST]
+Traceback (most recent call last):
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/var/www/MoreTech2024NFT/backend/app.py", line 323, in get_nft_chains
+    nft_chains = get_valid_nfts(user_eth_address)
+TypeError: get_valid_nfts() takes 0 positional arguments but 1 was given
+ERROR:app:Exception on /send_data_for_backend [POST]
+Traceback (most recent call last):
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/var/www/MoreTech2024NFT/backend/app.py", line 337, in send_data_for_backend
+    send_data_for_backend(data)
+TypeError: send_data_for_backend() takes 0 positional arguments but 1 was given
+ERROR:app:Exception on /send_data_for_backend [POST]
+Traceback (most recent call last):
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/var/www/MoreTech2024NFT/backend/app.py", line 337, in send_data_for_backend
+    send_data_for_backend(data)
+TypeError: send_data_for_backend() takes 0 positional arguments but 1 was given
+ERROR:app:Exception on /get_actual_valid_nfts [POST]
+Traceback (most recent call last):
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/var/www/MoreTech2024NFT/backend/app.py", line 307, in get_actual_valid_nfts
+    user_eth_address = data.get('user_eth_address')
+AttributeError: 'list' object has no attribute 'get'
+ERROR:app:Exception on /get_nft_chains [POST]
+Traceback (most recent call last):
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/var/www/MoreTech2024NFT/backend/app.py", line 323, in get_nft_chains
+    nft_chains = get_valid_nfts(user_eth_address)
+TypeError: get_valid_nfts() takes 0 positional arguments but 1 was given
+INFO:werkzeug:198.235.24.216 - - [21/Oct/2024 22:55:33] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:65.49.1.106 - - [22/Oct/2024 04:29:47] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:65.49.1.97 - - [22/Oct/2024 04:30:02] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+ERROR:werkzeug:199.45.154.153 - - [22/Oct/2024 06:56:13] code 400, message Bad request version ('À\x14À')
+INFO:werkzeug:199.45.154.153 - - [22/Oct/2024 06:56:13] "[35m[1m\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03Ø \x062L·í;\x10zLÐ§Y»!?v$\\ê\x13]¡r\x02¸"ê\x02v\x0f U¨¼ø\x9b(\x0d¡È\x15gT\x92\x8f\x86/A+\x1d\x9b\x97Ç3²Ãú\x16\x93<Ú®Ñ\x00&Ì¨Ì©À/À0À+À,À\x13À\x09À\x14À[0m" HTTPStatus.BAD_REQUEST -
+INFO:werkzeug:199.45.154.153 - - [22/Oct/2024 06:56:17] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:199.45.154.153 - - [22/Oct/2024 06:56:22] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:199.45.154.153 - - [22/Oct/2024 06:56:23] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+ERROR:werkzeug:199.45.154.153 - - [22/Oct/2024 06:56:25] code 505, message Invalid HTTP version (2.0)
+INFO:werkzeug:199.45.154.153 - - [22/Oct/2024 06:56:25] "[35m[1mPRI * HTTP/2.0[0m" HTTPStatus.HTTP_VERSION_NOT_SUPPORTED -
+ERROR:app:Exception on /get_nft_chains [POST]
+Traceback (most recent call last):
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/var/www/MoreTech2024NFT/backend/app.py", line 323, in get_nft_chains
+    nft_chains = get_valid_nfts(user_eth_address)
+TypeError: get_valid_nfts() takes 0 positional arguments but 1 was given
+ERROR:app:Exception on /send_data_for_backend [POST]
+Traceback (most recent call last):
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/var/www/MoreTech2024NFT/backend/app.py", line 337, in send_data_for_backend
+    send_data_for_backend(data)
+TypeError: send_data_for_backend() takes 0 positional arguments but 1 was given
+ERROR:app:Exception on /send_data_for_backend [POST]
+Traceback (most recent call last):
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/var/www/MoreTech2024NFT/backend/app.py", line 337, in send_data_for_backend
+    send_data_for_backend(data)
+TypeError: send_data_for_backend() takes 0 positional arguments but 1 was given
+ERROR:werkzeug:185.100.87.136 - - [22/Oct/2024 08:39:58] code 400, message Bad HTTP/0.9 request type ('\x00\x00\x00\x11\x00\x00\x01é\x00\x01\x00\x00\x00ÿÿÿÿ\x01\x00\x00\x00\x00\x00\x00\x00')
+INFO:werkzeug:185.100.87.136 - - [22/Oct/2024 08:39:58] "[35m[1m\x00\x00\x00\x11\x00\x00\x01é\x00\x01\x00\x00\x00ÿÿÿÿ\x01\x00\x00\x00\x00\x00\x00\x00\x0c\x02\x00\x00\x00\x10MyCustomAssembly\x05\x01\x00\x00\x00[0m" HTTPStatus.BAD_REQUEST -
+ERROR:werkzeug:209.38.210.255 - - [22/Oct/2024 09:14:42] code 400, message Bad request version ('À\x14À')
+INFO:werkzeug:209.38.210.255 - - [22/Oct/2024 09:14:42] "[35m[1m\x16\x03\x01\x00{\x01\x00\x00w\x03\x03téi«?n\x1b¶7.\x17Þ`"-\x15Y6\x0dEá²ít´J\x82IàÞ\x00Â\x00\x00\x1aÀ/À+À\x11À\x07À\x13À\x09À\x14À[0m" HTTPStatus.BAD_REQUEST -
+ERROR:werkzeug:209.38.210.255 - - [22/Oct/2024 09:14:42] code 400, message Bad request version ('À\x14À')
+INFO:werkzeug:209.38.210.255 - - [22/Oct/2024 09:14:42] "[35m[1m\x16\x03\x01\x00{\x01\x00\x00w\x03\x03%º\x09\x94#ü2×\x17ÎH\x16lðu\x0b:\x86\x8e¦/té\x91w#¢ci\x00Qæ\x00\x00\x1aÀ/À+À\x11À\x07À\x13À\x09À\x14À[0m" HTTPStatus.BAD_REQUEST -
+INFO:werkzeug:209.38.210.255 - - [22/Oct/2024 09:14:42] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:198.235.24.152 - - [22/Oct/2024 09:31:55] "GET / HTTP/1.0" 200 -
+INFO:werkzeug:45.92.176.94 - - [22/Oct/2024 10:31:31] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:45.92.176.94 - - [22/Oct/2024 10:32:13] "GET / HTTP/1.1" 200 -
+[2024-10-22 11:10:20 +0000] [201447] [WARNING] Invalid request from ip=91.191.209.206: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+ERROR:werkzeug:91.191.209.206 - - [22/Oct/2024 11:11:06] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+INFO:werkzeug:91.191.209.206 - - [22/Oct/2024 11:11:06] "[35m[1m\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr[0m" HTTPStatus.BAD_REQUEST -
+ERROR:werkzeug:91.191.209.202 - - [22/Oct/2024 11:24:51] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+INFO:werkzeug:91.191.209.202 - - [22/Oct/2024 11:24:51] "[35m[1m\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr[0m" HTTPStatus.BAD_REQUEST -
+[2024-10-22 11:47:03 +0000] [201447] [WARNING] Invalid request from ip=91.191.209.206: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+ERROR:werkzeug:91.191.209.206 - - [22/Oct/2024 11:47:46] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+INFO:werkzeug:91.191.209.206 - - [22/Oct/2024 11:47:46] "[35m[1m\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr[0m" HTTPStatus.BAD_REQUEST -
+ERROR:werkzeug:91.191.209.202 - - [22/Oct/2024 12:04:14] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+INFO:werkzeug:91.191.209.202 - - [22/Oct/2024 12:04:14] "[35m[1m\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr[0m" HTTPStatus.BAD_REQUEST -
+ERROR:app:Exception on /get_nft_chains [POST]
+Traceback (most recent call last):
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/var/www/MoreTech2024NFT/backend/app.py", line 323, in get_nft_chains
+    nft_chains = get_valid_nfts(user_eth_address)
+TypeError: get_valid_nfts() takes 0 positional arguments but 1 was given
+ERROR:app:Exception on /get_actual_valid_nfts [POST]
+Traceback (most recent call last):
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/var/www/MoreTech2024NFT/backend/app.py", line 307, in get_actual_valid_nfts
+    user_eth_address = data.get('user_eth_address')
+AttributeError: 'list' object has no attribute 'get'
+ERROR:app:Exception on /send_data_for_backend [POST]
+Traceback (most recent call last):
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask_cors/extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/var/www/MoreTech2024NFT/backend/app.py", line 337, in send_data_for_backend
+    send_data_for_backend(data)
+TypeError: send_data_for_backend() takes 0 positional arguments but 1 was given
+ERROR:werkzeug:154.213.185.206 - - [22/Oct/2024 13:01:28] code 400, message Bad request syntax ('JDWP-Handshake')
+INFO:werkzeug:154.213.185.206 - - [22/Oct/2024 13:01:28] "[35m[1mJDWP-Handshake[0m" HTTPStatus.BAD_REQUEST -
+INFO:werkzeug:172.169.4.201 - - [22/Oct/2024 13:18:51] "[33mGET /v2/ HTTP/1.1[0m" 404 -
+INFO:werkzeug:173.255.248.109 - - [22/Oct/2024 13:30:04] "GET / HTTP/1.0" 200 -
+INFO:werkzeug:45.84.89.3 - - [22/Oct/2024 14:55:57] "GET / HTTP/1.0" 200 -
+[2024-10-22 15:27:31 +0000] [201447] [WARNING] Invalid request from ip=167.71.19.26: Invalid HTTP request line: ''
+INFO:werkzeug:198.235.24.203 - - [22/Oct/2024 18:49:29] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:198.235.24.13 - - [22/Oct/2024 19:29:48] "GET / HTTP/1.0" 200 -
+INFO:werkzeug:45.156.129.126 - - [22/Oct/2024 19:38:47] "[33mGET /api/session/properties HTTP/1.1[0m" 404 -
+INFO:werkzeug:45.156.129.125 - - [22/Oct/2024 19:39:02] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:45.156.129.126 - - [22/Oct/2024 19:39:17] "[33mGET /ext-js/app/common/zld_product_spec.js HTTP/1.1[0m" 404 -
+INFO:werkzeug:45.156.129.127 - - [22/Oct/2024 19:39:17] "[33mGET /cgi-bin/authLogin.cgi HTTP/1.1[0m" 404 -
+INFO:werkzeug:64.226.73.146 - - [22/Oct/2024 19:46:24] "GET / HTTP/1.0" 200 -
+INFO:werkzeug:164.92.236.64 - - [22/Oct/2024 19:46:25] "[33mGET /cgi-bin/authLogin.cgi HTTP/1.1[0m" 404 -
+ERROR:werkzeug:164.92.236.64 - - [22/Oct/2024 19:46:25] code 400, message Bad request version ('À\x13À')
+INFO:werkzeug:164.92.236.64 - - [22/Oct/2024 19:46:25] "[35m[1m\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03ô\x87'ÙR¨K\x1d·lxMó\x00\x80àiÇüÇ\x19d´XR\x0dJå\x9e\x179X Ml\x7f3Ö\x14\x19!Ö\x17\x15\x8dÁ\x9d\x92À\x04Ôlæ¢Xÿýúúè~\x0dh&\x0e\x00&À+À/À,À0Ì©Ì¨À\x09À\x13À[0m" HTTPStatus.BAD_REQUEST -
+INFO:werkzeug:161.35.213.125 - - [22/Oct/2024 19:46:25] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:164.90.185.60 - - [22/Oct/2024 19:46:25] "[33mGET /solr/admin/info/system HTTP/1.1[0m" 404 -
+INFO:werkzeug:164.90.224.231 - - [22/Oct/2024 19:46:25] "[33mGET /v2/_catalog HTTP/1.1[0m" 404 -
+INFO:werkzeug:209.38.198.245 - - [22/Oct/2024 19:46:25] "[33mGET /query?q=SHOW+DIAGNOSTICS HTTP/1.1[0m" 404 -
+ERROR:werkzeug:167.172.107.241 - - [22/Oct/2024 19:46:25] code 400, message Bad request version ('\x1bL')
+INFO:werkzeug:167.172.107.241 - - [22/Oct/2024 19:46:25] "[35m[1m\x16\x03\x01\x01$\x01\x00\x01 \x03\x03m\x1e¸ø>p "Úds\x97ÒZí\x9cf¤£wÁ¦3ÁnúÛù\x12\x97\x99à \x1bL[0m" HTTPStatus.BAD_REQUEST -
+ERROR:werkzeug:164.92.236.64 - - [22/Oct/2024 19:46:25] code 400, message Bad request version ('À\x13À')
+INFO:werkzeug:164.92.236.64 - - [22/Oct/2024 19:46:25] "[35m[1m\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03¤dA=\x0bZ\x054Y\x017.\x00\x95\x85\x02\x1aáo\x8asH;ûÓ\x81äò\x01\x95\x9bÅ ­s©åÛXa!\x17ñ*P\x81~\x98ue»®*/¢\x8d\x06\x9f\x1f¾\x03MÜ¡;\x00&À+À/À,À0Ì©Ì¨À\x09À\x13À[0m" HTTPStatus.BAD_REQUEST -
+INFO:werkzeug:164.90.185.60 - - [22/Oct/2024 19:46:25] "[33mGET /solr/admin/cores?action=STATUS&wt=json HTTP/1.1[0m" 404 -
+ERROR:werkzeug:164.92.236.64 - - [22/Oct/2024 19:46:25] code 400, message Bad request version ('À\x13À')
+INFO:werkzeug:164.92.236.64 - - [22/Oct/2024 19:46:25] "[35m[1m\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03ÛHÍ\x89j\x11¡\x89ê~\x8cL÷\x81«ò8àµ=f\x1aZ\x88sä|Õ*\x8c\x1cA ë\x1ez\x16ãT\x1aÐçêµ¬c\\Np\x82·\x92\x0d¶µ\x1f\x87SM\x9eÀÈ[Ê¤\x00&À+À/À,À0Ì©Ì¨À\x09À\x13À[0m" HTTPStatus.BAD_REQUEST -
+INFO:werkzeug:52.76.71.100 - - [22/Oct/2024 19:46:26] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+ERROR:werkzeug:152.32.156.136 - - [22/Oct/2024 23:48:10] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x01\x17\x01\x00\x01\x13\x03\x03b\x80¶ô¸ª\x15\x87Du$ø^R¸CÓH\x186ûSûû(µ¾¢Ù9ø\x1a')
+INFO:werkzeug:152.32.156.136 - - [22/Oct/2024 23:48:10] "[35m[1m\x16\x03\x01\x01\x17\x01\x00\x01\x13\x03\x03b\x80¶ô¸ª\x15\x87Du$ø^R¸CÓH\x186ûSûû(µ¾¢Ù9ø\x1a E7\x99[0m" HTTPStatus.BAD_REQUEST -
+INFO:werkzeug:152.32.156.136 - - [22/Oct/2024 23:48:21] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:152.32.156.136 - - [22/Oct/2024 23:48:21] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:152.32.156.136 - - [22/Oct/2024 23:48:21] "[33mGET /robots.txt HTTP/1.1[0m" 404 -
+INFO:werkzeug:152.32.156.136 - - [22/Oct/2024 23:48:22] "[33mGET /sitemap.xml HTTP/1.1[0m" 404 -
+INFO:werkzeug:152.32.156.136 - - [22/Oct/2024 23:48:22] "[33mGET /config.json HTTP/1.1[0m" 404 -
+[2024-10-23 00:27:37 +0000] [195118] [CRITICAL] WORKER TIMEOUT (pid:201447)
+[2024-10-23 00:27:37 +0000] [201447] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/gunicorn/http/message.py", line 274, in parse
+    line, rbuf = self.read_line(unreader, buf, self.limit_request_line)
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/gunicorn/http/message.py", line 326, in read_line
+    self.get_data(unreader, buf)
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2024-10-23 00:27:37 +0000] [201447] [INFO] Worker exiting (pid: 201447)
+[2024-10-23 00:27:38 +0000] [195118] [ERROR] Worker (pid:201447) was sent SIGKILL! Perhaps out of memory?
+[2024-10-23 00:27:38 +0000] [238494] [INFO] Booting worker with pid: 238494
+INFO:werkzeug:167.99.7.225 - - [23/Oct/2024 04:21:03] "GET / HTTP/1.1" 200 -
+[2024-10-23 06:35:58 +0000] [238494] [WARNING] Invalid request from ip=185.122.204.51: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+ERROR:werkzeug:185.122.204.51 - - [23/Oct/2024 07:21:15] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+INFO:werkzeug:185.122.204.51 - - [23/Oct/2024 07:21:15] "[35m[1m\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr[0m" HTTPStatus.BAD_REQUEST -
+INFO:werkzeug:65.49.20.69 - - [23/Oct/2024 07:28:23] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:65.49.20.69 - - [23/Oct/2024 07:28:38] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:13.58.97.162 - - [23/Oct/2024 08:30:07] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:45.84.89.3 - - [23/Oct/2024 12:36:25] "GET / HTTP/1.1" 200 -
+ERROR:werkzeug:91.191.209.202 - - [23/Oct/2024 14:48:22] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+INFO:werkzeug:91.191.209.202 - - [23/Oct/2024 14:48:22] "[35m[1m\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr[0m" HTTPStatus.BAD_REQUEST -
+ERROR:werkzeug:154.213.185.206 - - [23/Oct/2024 14:56:21] code 400, message Bad request syntax ('JDWP-Handshake')
+INFO:werkzeug:154.213.185.206 - - [23/Oct/2024 14:56:21] "[35m[1mJDWP-Handshake[0m" HTTPStatus.BAD_REQUEST -
+[2024-10-23 16:29:11 +0000] [195118] [CRITICAL] WORKER TIMEOUT (pid:238494)
+[2024-10-23 16:29:11 +0000] [238494] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/gunicorn/http/message.py", line 274, in parse
+    line, rbuf = self.read_line(unreader, buf, self.limit_request_line)
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/gunicorn/http/message.py", line 326, in read_line
+    self.get_data(unreader, buf)
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2024-10-23 16:29:11 +0000] [238494] [INFO] Worker exiting (pid: 238494)
+[2024-10-23 16:29:11 +0000] [249798] [INFO] Booting worker with pid: 249798
+ERROR:werkzeug:91.191.209.202 - - [23/Oct/2024 17:40:48] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+INFO:werkzeug:91.191.209.202 - - [23/Oct/2024 17:40:48] "[35m[1m\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr[0m" HTTPStatus.BAD_REQUEST -
+ERROR:werkzeug:206.168.34.115 - - [23/Oct/2024 18:52:14] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03O*\x10\x1b\x06\x9eoÌ')
+INFO:werkzeug:206.168.34.115 - - [23/Oct/2024 18:52:14] "[35m[1m\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03O*\x10\x1b\x06\x9eoÌ\x1cYi×[0m" HTTPStatus.BAD_REQUEST -
+INFO:werkzeug:206.168.34.115 - - [23/Oct/2024 18:52:18] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:206.168.34.115 - - [23/Oct/2024 18:52:21] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:206.168.34.115 - - [23/Oct/2024 18:52:22] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+ERROR:werkzeug:206.168.34.115 - - [23/Oct/2024 18:52:22] code 505, message Invalid HTTP version (2.0)
+INFO:werkzeug:206.168.34.115 - - [23/Oct/2024 18:52:22] "[35m[1mPRI * HTTP/2.0[0m" HTTPStatus.HTTP_VERSION_NOT_SUPPORTED -
+ERROR:werkzeug:167.94.146.60 - - [23/Oct/2024 22:00:16] code 400, message Bad request version ('À\x14À')
+INFO:werkzeug:167.94.146.60 - - [23/Oct/2024 22:00:16] "[35m[1m\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03[U[èöC2»WÈ@[)\x1eÝ\x99ª[#\x82ä\x17\x8blòR\x06ûÏô0Ê (s\x97t."\x17};F-¥*säx<|\x92\x1e§CÂ\x0d}k:Þ\x97Y¬ú\x00&Ì¨Ì©À/À0À+À,À\x13À\x09À\x14À[0m" HTTPStatus.BAD_REQUEST -
+INFO:werkzeug:167.94.146.60 - - [23/Oct/2024 22:00:20] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:167.94.146.60 - - [23/Oct/2024 22:00:23] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:167.94.146.60 - - [23/Oct/2024 22:00:24] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+ERROR:werkzeug:167.94.146.60 - - [23/Oct/2024 22:00:25] code 505, message Invalid HTTP version (2.0)
+INFO:werkzeug:167.94.146.60 - - [23/Oct/2024 22:00:25] "[35m[1mPRI * HTTP/2.0[0m" HTTPStatus.HTTP_VERSION_NOT_SUPPORTED -
+INFO:werkzeug:188.166.87.67 - - [23/Oct/2024 23:45:29] "GET / HTTP/1.1" 200 -
+ERROR:werkzeug:179.60.147.144 - - [23/Oct/2024 23:59:13] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+INFO:werkzeug:179.60.147.144 - - [23/Oct/2024 23:59:13] "[35m[1m\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr[0m" HTTPStatus.BAD_REQUEST -
+INFO:werkzeug:77.223.103.53 - - [24/Oct/2024 00:13:51] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:77.223.103.53 - - [24/Oct/2024 00:13:51] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:80.82.70.133 - - [24/Oct/2024 02:40:01] "GET / HTTP/1.0" 200 -
+ERROR:werkzeug:5.8.11.202 - - [24/Oct/2024 02:40:15] code 400, message Bad request version ('À\x14À')
+INFO:werkzeug:5.8.11.202 - - [24/Oct/2024 02:40:15] "[35m[1m\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03)z0yãÛ ß<½&Û\x97\x1eÁ¸\x07Ô=?I\\\x1aØfw\x88\x15;\x8d<? .;4U\x05W-\x1fkÉ\x09XN§\x13è "DA\x85\x9f{ó\x17Uzåôx\x02\x00\x00&Ì¨Ì©À/À0À+À,À\x13À\x09À\x14À[0m" HTTPStatus.BAD_REQUEST -
+INFO:werkzeug:5.8.11.202 - - [24/Oct/2024 02:40:15] "[33mGET /v2/_catalog HTTP/1.1[0m" 404 -
+[2024-10-24 02:55:46 +0000] [195118] [CRITICAL] WORKER TIMEOUT (pid:249798)
+[2024-10-24 02:55:46 +0000] [249798] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/gunicorn/http/message.py", line 274, in parse
+    line, rbuf = self.read_line(unreader, buf, self.limit_request_line)
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/gunicorn/http/message.py", line 326, in read_line
+    self.get_data(unreader, buf)
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2024-10-24 02:55:46 +0000] [249798] [INFO] Worker exiting (pid: 249798)
+[2024-10-24 02:55:46 +0000] [258877] [INFO] Booting worker with pid: 258877
+INFO:werkzeug:147.185.132.204 - - [24/Oct/2024 04:08:06] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:64.62.197.71 - - [24/Oct/2024 05:24:46] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:64.62.197.71 - - [24/Oct/2024 05:24:55] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:147.185.132.109 - - [24/Oct/2024 06:20:29] "GET / HTTP/1.0" 200 -
+ERROR:werkzeug:103.116.81.150 - - [24/Oct/2024 12:56:29] code 400, message Bad request syntax ('\x03\x00\x00\x13\x0eà\x00\x00\x00\x00\x00\x01\x00\x08\x00\x03\x00\x00\x00')
+INFO:werkzeug:103.116.81.150 - - [24/Oct/2024 12:56:29] "[35m[1m\x03\x00\x00\x13\x0eà\x00\x00\x00\x00\x00\x01\x00\x08\x00\x03\x00\x00\x00[0m" HTTPStatus.BAD_REQUEST -
+INFO:werkzeug:45.84.89.2 - - [24/Oct/2024 13:22:31] "GET / HTTP/1.1" 200 -
+[2024-10-24 13:58:24 +0000] [195118] [CRITICAL] WORKER TIMEOUT (pid:258877)
+[2024-10-24 13:58:24 +0000] [258877] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/gunicorn/http/message.py", line 271, in parse
+    self.get_data(unreader, buf, stop=True)
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+  File "/root/.pyenv/versions/3.10.12/lib/python3.10/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2024-10-24 13:58:24 +0000] [258877] [INFO] Worker exiting (pid: 258877)
+[2024-10-24 13:58:25 +0000] [269673] [INFO] Booting worker with pid: 269673
+ERROR:werkzeug:167.94.145.98 - - [24/Oct/2024 13:59:51] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03Æ½ôh7ô\x11\x9dÚ')
+INFO:werkzeug:167.94.145.98 - - [24/Oct/2024 13:59:51] "[35m[1m\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03Æ½ôh7ô\x11\x9dÚ\x09\x19[0m" HTTPStatus.BAD_REQUEST -
+INFO:werkzeug:167.94.145.98 - - [24/Oct/2024 13:59:54] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:167.94.145.98 - - [24/Oct/2024 13:59:57] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:167.94.145.98 - - [24/Oct/2024 13:59:57] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+ERROR:werkzeug:167.94.145.98 - - [24/Oct/2024 13:59:58] code 505, message Invalid HTTP version (2.0)
+INFO:werkzeug:167.94.145.98 - - [24/Oct/2024 13:59:58] "[35m[1mPRI * HTTP/2.0[0m" HTTPStatus.HTTP_VERSION_NOT_SUPPORTED -
+INFO:werkzeug:80.82.70.133 - - [24/Oct/2024 14:04:40] "GET / HTTP/1.0" 200 -
+ERROR:werkzeug:80.82.77.202 - - [24/Oct/2024 14:05:49] code 400, message Bad HTTP/0.9 request type ('\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03ámó\\¨\x93')
+INFO:werkzeug:80.82.77.202 - - [24/Oct/2024 14:05:49] "[35m[1m\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03ámó\\¨\x93 úÿ\x93[0m" HTTPStatus.BAD_REQUEST -
+INFO:werkzeug:80.82.77.202 - - [24/Oct/2024 14:05:49] "[33mGET /aaa9 HTTP/1.1[0m" 404 -
+ERROR:werkzeug:80.82.77.202 - - [24/Oct/2024 14:05:50] code 400, message Bad request version ('À\x13À')
+INFO:werkzeug:80.82.77.202 - - [24/Oct/2024 14:05:50] "[35m[1m\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03\x7f\x99ÿ\x1b\x10\x9bm\x86n\x94\x06\x85òÂh¸,\x14¹q!àÐûÛ¥¾Ú×¿°d ¦q\x93\x84ê¬\x9c\x11ñ\x83\x1b÷8³3j¢J¹d"P\x02óò<\x1c\x0e\x94£\x08}\x00&À+À/À,À0Ì©Ì¨À\x09À\x13À[0m" HTTPStatus.BAD_REQUEST -
+INFO:werkzeug:80.82.77.202 - - [24/Oct/2024 14:05:50] "[33mGET /aab9 HTTP/1.1[0m" 404 -
+INFO:werkzeug:115.231.78.11 - - [24/Oct/2024 14:22:17] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:115.231.78.11 - - [24/Oct/2024 14:22:18] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:115.231.78.11 - - [24/Oct/2024 14:22:18] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:115.231.78.11 - - [24/Oct/2024 14:22:19] "[33mGET /robots.txt HTTP/1.1[0m" 404 -
+ERROR:werkzeug:5.8.11.202 - - [24/Oct/2024 16:49:07] code 400, message Bad request version ('À\x14À')
+INFO:werkzeug:5.8.11.202 - - [24/Oct/2024 16:49:07] "[35m[1m\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03>R-©TÇOÄ²¼­ß¡Z§~I(Ü\x9f3V\x1c\x18¶ó*Ý\x01\x92<0 cH7È\x17\x07\x15.&+0@§Ó\x86Ú¤à\x80\x0cr1C2\x0bç!Ï½"\x01B\x00&Ì¨Ì©À/À0À+À,À\x13À\x09À\x14À[0m" HTTPStatus.BAD_REQUEST -
+INFO:werkzeug:5.8.11.202 - - [24/Oct/2024 16:49:07] "[33mGET /v2/_catalog HTTP/1.1[0m" 404 -
